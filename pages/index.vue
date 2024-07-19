@@ -201,7 +201,7 @@ const experienceItems = computed(() => {
 
 // Projects section
 const projects = computed(() => {
-  const projectCount = 3; // Update this if you add or remove projects
+  const projectCount = 4; // Update this if you add or remove projects
   return Array.from({ length: projectCount }, (_, i) => ({
     title: t(`projects.items.${i}.title`),
     company: t(`projects.items.${i}.company`),

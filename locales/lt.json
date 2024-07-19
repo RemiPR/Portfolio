@@ -42,7 +42,7 @@
         "company": "Turiba University",
         "link": "https://scrolle.me",
         "description": "Praktiką atlikome 3 studentai iš KVK, reikėjo sukurti LMS - mokymosi valdymo sistemos prototipą, kuriame būtų galima saugiai prisijungti 5 skirtingų tipų vartotojams. Buvau atsakingas už komandos vadovo pareigas, projektavimą ir dizainą su klientine puse(front-end). Dizainą kūrėme patys,  didžiąją dalį klientinės pusės sukūriau vienas.",
-        "detailedDescription": "Dėl šio projekto dydžio, reikalavimų bei laiko trūkumo, buvo sukurtas minimalus prototipas, todėl didelė dalis funkcionalumo nebuvo užbaigta, tačiau turimas laikas buvo efektyviai išnaudotas ir jo metu buvo išmokta daug naujų dalykų.",
+        "detailedDescription": "Dėl šio projekto dydžio, reikalavimų bei laiko trūkumo, buvo sukurtas minimalus prototipas, todėl didelė dalis funkcionalumo nebuvo užbaigta, tačiau turimas laikas buvo efektyviai išnaudotas ir jo metu buvo išmokta daug naujų dalykų. Plačiau aprašyta žemiau esančiame projektai skyriuje.",
         "skills": "Figma,Tailwind CSS,Nuxt,Node.js,MongoDB",
         "github": "https://github.com/RemiPR/Turiba-University-Erasmus-Project"
       },
@@ -66,33 +66,60 @@
         "company": "3 mėn praktika - Turiba University ",
         "link": "https://scrolle.me",
         "github": "https://github.com/RemiPR/Turiba-University-Erasmus-Project",
-        "image": "/placeholder.jpg",
-        "images": "/placeholder.jpg,/placeholder.jpg,/placeholder.jpg",
+        "image": "/student_bg.png",
+        "images": {
+          "0": "/student_bg.png",
+          "1": "/management_bg.png",
+          "2": "/placeholder.jpg"
+        },
         "description": "Praktiką atlikome 3 studentai iš KVK, reikėjo sukurti LMS - mokymosi valdymo sistemą, kurioje būtų galima saugiai prisijungti daugumai skirtingų tipų vartotojams. Buvau atsakingas už komandos vadovo pareigas ir dizainą su klientine puse(front-end). Dizainą kūrėme patys,  didžiąją dalį klientinės pusės sukūriau vienas.",
-        "detailedDescription": "Šis ambicingas projektas buvo kuriamas 3 studentų ir vieno praktikos vadovo. Tikslas buvo sukurti mokymosi valdymo sistemą(LMS), kuri būtų saugi, patogi naudoti ir turėtų pagrindinį funkcionalumą kaip Moodle. Šis projektas buvo kuriamas siekiant išspręsti šiuolaikines kitų mokymosi valdymo sistemų problemas, tokių kaip Moodle, kurios yra pernelyg sudėtingos naudoti, turi per daug nereikalingo funkcionalumo ir tiesiog neatrodo labai patraukliai. Dėl projekto dydžio ir laiko trūkumo, buvo sukurtas minimalus prototipas, tačiau turimas laikas buvo efektyviai išnaudotas ir jo metu buvo išmokta daug naujų dalykų.",
+        "detailedDescription": "Šis ambicingas projektas buvo kuriamas 3 studentų ir vieno praktikos vadovo. Tikslas buvo sukurti mokymosi valdymo sistemą(LMS), kuri būtų saugi, patogi naudoti ir turėtų pagrindinį funkcionalumą kaip Moodle. Šis projektas buvo kuriamas siekiant išspręsti šiuolaikines kitų mokymosi valdymo sistemų problemas, tokių kaip Moodle, kurios yra pernelyg sudėtingos naudoti, turi per daug nereikalingo funkcionalumo ir tiesiog neatrodo labai patraukliai. Dėl projekto dydžio ir laiko trūkumo, buvo sukurtas minimalus prototipas, tačiau turimas laikas buvo efektyviai išnaudotas ir jo metu buvo išmokta daug naujų dalykų. Backend dalis yra išjungta, todėl autorizacija neveikia, visus puslapius galima pasiekti tiesiogiai įvedus į URL vieną iš norimų vartotojų tipų: pvz.: https://scrolle.me/guest, /student, /teacher, /management. P.S. tamsos rėžimas ir kalbų pasirinkimas veikia tik ant kai kurių puslapių.",
         "skills": "Figma,Tailwind CSS,Nuxt,Node.js,MongoDB"
       },
       "1": {
-        "title": "Išmaniųjų namų ",
-        "company": "Įmonės Pavadinimas",
-        "link": "",
-        "github": "",
-        "image": "/placeholder.jpg",
-        "images": "",
-        "description": "Trumpas aprašymas kortelei",
-        "detailedDescription": "Ilgesnis, išsamesnis aprašymas modalui",
+        "title": "Išmaniųjų namų sprendimai",
+        "company": "UAB Jung Vilnius",
+        "link": "https://www.jung.de/lt/",
+        "github": "https://github.com/H1X4Dev/KVK-Agile",
+        "image": "/app_1.png",
+        "images": {
+          "0": "/app_1.png",
+          "1": "/app_2.png",
+          "2": "/app_3.png"
+        },
+        "description": "Ši mobili programėlė buvo kuriama 5 studentų naudojant Agile metodologiją. Aš buvau atsakingas už Scrum vadovo pareigas bei dizainą ir mobilios aplikacijos klientinę pusę(front-end). ",
+        "detailedDescription": "Šiai programėlei sukurti buvo naudojama Kotlin per Android Studio. Buvo laikomasi geriausių programavimo praktikų, kurių mokėmės studijų metu(SOLID principai). \nProgramėlės tikslas buvo padėti vartotojams išsirinkti išmaniųjų namų sistemą pagal užpildytą klausimyną ir nukreipti juos pas reikiamus tiekėjus, kurie galėtų įdiegti šias norimas paslaugas.",
         "skills": "Android Studio,Kotlin,Trello,Agile,Confluence"
       },
       "2": {
-        "title": "Pristatymo puslapis",
-        "company": "www.landing.com",
-        "link": "https://www.upstatement.com/",
+        "title": "Studentų pasiekimų vertinimo sistema",
+        "company": "KVK kursinis darbas",
+        "link": "",
         "github": "",
-        "image": "/placeholder.jpg",
-        "images": "",
-        "description": "Kurti ir palaikyti svarbius komponentus, naudojamus Klaviyo frontendo kūrimui visame produkte. Glaudžiai bendradarbiauti su įvairių funkcijų komandomis, įskaitant kūrėjus, dizainerius ir produktų vadovus, siekiant įgyvendinti ir skatinti geriausias žiniatinklio prieinamumo praktikas.",
+        "image": "/assessment_system_3.png",
+        "images": {
+          "0": "/assessment_system_3.png",
+          "1": "/assessment_system_2.png",
+          "2": "/assessment_system_1.png"
+        },
+        "description": "Šį kursinį darbą dariau vienas, pirmą kartą išbandžiau Nuxt karkasą su Tailwind CSS, serverinei pusei(back-end) buvo naudota Node.js. Sukūriau pasiekimų vertinimo sistemos internetinę aplikaciją, kurioje galima prisijungti kaip dėstytotojui, prisijungus, atlikti CRUD sukurtiems testams, kuriuos galima atlikinėti prisijungus kaip vartotojas studentas.",
+        "detailedDescription": "Šioje vertinimo sistemoje, yra atvaizduojami testai iš duomenų bazės, kuriuos gali kurti/keisti/trinti prisijungęs dėstytojas. Taip pat yra sukurtas filtravimo funkcionalumas, kuris leidžia atsirūšiuoti testus pagal grupes, klausimų kiekį, laiko limitą ir t.t.",
+        "skills": "Nuxt,Tailwind CSS,Node.js,MongoDB"
+      },
+      "3": {
+        "title": "Darbo skelbimų portalas",
+        "company": "KVK projektinis darbas",
+        "link": "",
+        "github": "",
+        "image": "/job_portal_1.png",
+        "images": {
+          "0": "/job_portal_1.png",
+          "1": "/job_portal_2.png",
+          "2": "/job_portal_3.png"
+        },
+        "description": "Šį projektinį darbą kūriau su 2 kolegomis, pirmą kartą naudojome MERN architektūrą. Šis projekto mokslinis straipsnis buvo pristatytas KVK technologijų konferencijoje, kurį galite rasti paspaudę ant nuorodos, kuri bus matoma paspaudus ant šios projekto kortelės.",
         "detailedDescription": "",
-        "skills": "JavaScript,TypeScript,React,Storybook"
+        "skills": "React,Tailwind CSS,Node.js,MongoDB"
       }
     }
   },
