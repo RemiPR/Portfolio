@@ -1,0 +1,143 @@
+{
+  "name": "Remigijus Prialgauskis",
+  "jobTitle": "Trečio kurso informatikos studentas",
+  "shortBio": "Kuriu modernias, patrauklias bei greitas internetines svetaines.",
+  "nav": {
+    "about": "APIE",
+    "experience": "PATIRTIS",
+    "projects": "PROJEKTAI"
+  },
+  "about": {
+    "paragraphs": {
+      "0": "Sveiki! Esu trečio kurso informatikos studentas, mokinuosi kurti patrauklias bei greitas internetines aplikacijas.",
+      "1": "Esu dirbęs su nemažai skirtingų technologijų, tačiau šiuo metu daugiausiai dėmesio skiriu full-stack kūrimui naudojant Nuxt(kuris yra Vue karkaso papildomas plėtinys).",
+      "2": "Visada ieškau galimybių pritaikyti savo įgūdžius realioms problemoms spręsti ir bendradarbiauti su panašiai mąstančiais programuotojais.",
+      "3": "Studijų metu įgijau papildomos patirties dalyvaudamas Erasmus programose Blended Intensive Programs (BIPs) Latvijoje ir Vokietijoje.",
+      "4": "Taip pat neseniai atlikau 3 mėnesių praktiką Rygoje, Latvijoje, kurios metu sustiprinau savo praktinius įgūdžius profesionalioje aplinkoje.",
+      "5": "Kai neprogramuoju, didžiąją dalį laisvo laiko praleidžiu prie kompiuterio žiūrėdamas visokius IT video, taip pat žiūriu anime, po truputį mokinuosi japonų kalbos ir žaidžiu kompiuterinius žaidimus su draugais"
+    }
+  },
+  "builtWith": "Sukurta naudojant Nuxt ir Tailwind CSS, patalpinta su Vercel. Visi tekstai uždėti",
+  "inter": "Inter",
+  "typeface": "šriftu.",
+  "portfolioCredit": "",
+  "experience": {
+    "title": "Patirtis",
+    "downloadResume": "Atsisiųsti CV",
+    "resumeUrl": "/Remigijus-Prialgauskis-cv-lt.pdf",
+    "items": {
+      "0": {
+        "period": "2022 — DABAR",
+        "title": "Informatikos studentas",
+        "company": "KVK - Klaipėdos Valstybinė Kolegija",
+        "link": "https://www.ku.lt/cris/entities/publication/6b727b31-a23f-4013-89a3-39f2ab7cb25c",
+        "description": "Studijų metu dirbau su daugybę skirtingų technologijų, nuo internetinių svetainių, mobilių aplikacijų kūrimo naudojant Android Studio, iki žaidimų kūrimo naudojant Godot Engine.",
+        "detailedDescription": "Pirmas kursas:\nSukūriau dvi internetines svetaines, vieną naudojant HTML, CSS(Bootstrap) ir JavaScript, kitą naudojant PHP ir Tailwind CSS. Taip pat su 2 grupiokais bendromis jėgomis sukūrėmę žaidimą 3d Tetris naudojant Unity.\n\nAntras kursas:\nSu 2 grupiokais sukūrėmę internetinę svetainę, kurioje buvo galima peržiūrėti bei talpinti darbo skelbimus, kūrimui naudojome MERN technologijų architektūrą. Šiam projektui buvo parašytas mokslinis straipsnis ir jis buvo pristatytas KVK technologijų konferencijoje. Šį straipsnį galite pamatyti paspaudus ant žemiau esančios internetinės svetainės nuorodos.\nSekantis projektas kurį dariau antrame kurse buvo mano kursinis darbas, kuriame pirmą kartą išbandžiau Nuxt karkasą su Tailwind CSS, o serverinei pusei(back-end) buvo naudota Node.js. Sukūriau pasiekimų vertinimo sistemos internetinę aplikaciją, kurioje galima prisijungti kaip dėstytotojui, prisijungus, atlikti CRUD sukurtiems testams, kuriuos galima atlikinėti prisijungus kaip vartotojas studentas.\nDar vienas iš svarbesnių projektų atliktų antrame kurse užsakovui iš Vilniaus buvo sukurta mobili aplikacija su Android Studio. 5 studentų komandoje per 2 mėnesius reikėjo sukurti mobilią aplikaciją, kuri padėtų vartotojams išsirinkti išmaniųjų namų sistemą pagal užpildytą klausimyną ir nukreiptų juos pas reikiamus tiekėjus, kurie galėtų įdiegti šias norimas paslaugas. Viso programavimo metu buvo naudojama Agile darbo metodika, aš buvau atsakingas už Scrum vadovo pareigas bei atsakingas už dizainą ir mobilios aplikacijos klientinę pusę(front-end).\n\nTrečias kursas:\nKursas dar neprasidėjo.",
+        "skills": "Figma,HTML,CSS, Bootstrap, Tailwind CSS,JavaScript,TypeScript,React,Vue,Nuxt,PHP,Java,Android Studio,Unity,Godot engine,Trello,Agile",
+        "github": ""
+      },
+      "1": {
+        "period": "GEG — LIEP 2024",
+        "title": "3 mėnesių praktika Latvijoje",
+        "company": "Turiba University",
+        "link": "https://scrolle.me",
+        "description": "Praktiką atlikome 3 studentai iš KVK, reikėjo sukurti LMS - mokymosi valdymo sistemos prototipą, kuriame būtų galima saugiai prisijungti 5 skirtingų tipų vartotojams. Buvau atsakingas už komandos vadovo pareigas, projektavimą ir dizainą su klientine puse(front-end). Dizainą kūrėme patys,  didžiąją dalį klientinės pusės sukūriau vienas.",
+        "detailedDescription": "Dėl šio projekto dydžio, reikalavimų bei laiko trūkumo, buvo sukurtas minimalus prototipas, todėl didelė dalis funkcionalumo nebuvo užbaigta, tačiau turimas laikas buvo efektyviai išnaudotas ir jo metu buvo išmokta daug naujų dalykų.",
+        "skills": "Figma,Tailwind CSS,Nuxt,Node.js,MongoDB",
+        "github": "https://github.com/RemiPR/Turiba-University-Erasmus-Project"
+      },
+      "2": {
+        "period": "2022 — 2022",
+        "title": "480 valandų JavaScript full-stack praktika",
+        "company": "UAB Oigreat(buvusi UAB Iverta)",
+        "link": "https://www.iverta.eu/namai/",
+        "description": "Praktikos metu išbandžiau dar nebandytas technologijas, pirmą kartą paliečiau serverinę programavimo pusę, pirmą kartą išbandžiau karkasus ir visokias bibliotekas. Šios praktikos metu sukūriau vieno puslapio internetinę svetainę remiantis pateiktu dizaino maketu.",
+        "detailedDescription": "",
+        "skills": "HTML,CSS(Sass),JavaScript,TypeScript,React,Firebase DB,Node.js",
+        "github": ""
+      }
+    }
+  },
+  "projects": {
+    "title": "Projektai",
+    "items": {
+      "0": {
+        "title": "LMS - Learning Management System",
+        "company": "3 mėn praktika - Turiba University ",
+        "link": "https://scrolle.me",
+        "github": "https://github.com/RemiPR/Turiba-University-Erasmus-Project",
+        "image": "/placeholder.jpg",
+        "images": "/placeholder.jpg,/placeholder.jpg,/placeholder.jpg",
+        "description": "Praktiką atlikome 3 studentai iš KVK, reikėjo sukurti LMS - mokymosi valdymo sistemą, kurioje būtų galima saugiai prisijungti daugumai skirtingų tipų vartotojams. Buvau atsakingas už komandos vadovo pareigas ir dizainą su klientine puse(front-end). Dizainą kūrėme patys,  didžiąją dalį klientinės pusės sukūriau vienas.",
+        "detailedDescription": "Šis ambicingas projektas buvo kuriamas 3 studentų ir vieno praktikos vadovo. Tikslas buvo sukurti mokymosi valdymo sistemą(LMS), kuri būtų saugi, patogi naudoti ir turėtų pagrindinį funkcionalumą kaip Moodle. Šis projektas buvo kuriamas siekiant išspręsti šiuolaikines kitų mokymosi valdymo sistemų problemas, tokių kaip Moodle, kurios yra pernelyg sudėtingos naudoti, turi per daug nereikalingo funkcionalumo ir tiesiog neatrodo labai patraukliai. Dėl projekto dydžio ir laiko trūkumo, buvo sukurtas minimalus prototipas, tačiau turimas laikas buvo efektyviai išnaudotas ir jo metu buvo išmokta daug naujų dalykų.",
+        "skills": "Figma,Tailwind CSS,Nuxt,Node.js,MongoDB"
+      },
+      "1": {
+        "title": "Išmaniųjų namų ",
+        "company": "Įmonės Pavadinimas",
+        "link": "",
+        "github": "",
+        "image": "/placeholder.jpg",
+        "images": "",
+        "description": "Trumpas aprašymas kortelei",
+        "detailedDescription": "Ilgesnis, išsamesnis aprašymas modalui",
+        "skills": "Android Studio,Kotlin,Trello,Agile,Confluence"
+      },
+      "2": {
+        "title": "Pristatymo puslapis",
+        "company": "www.landing.com",
+        "link": "https://www.upstatement.com/",
+        "github": "",
+        "image": "/placeholder.jpg",
+        "images": "",
+        "description": "Kurti ir palaikyti svarbius komponentus, naudojamus Klaviyo frontendo kūrimui visame produkte. Glaudžiai bendradarbiauti su įvairių funkcijų komandomis, įskaitant kūrėjus, dizainerius ir produktų vadovus, siekiant įgyvendinti ir skatinti geriausias žiniatinklio prieinamumo praktikas.",
+        "detailedDescription": "",
+        "skills": "JavaScript,TypeScript,React,Storybook"
+      }
+    }
+  },
+  "theme": "light",
+  "loading": "Kraunama...",
+  "modal": {
+    "about": "Detalus aprašymas",
+    "technologies": "Panaudotos technologijos",
+    "website": "Internetinė svetainė",
+    "close": "Uždaryti"
+  },
+  "contactForm": {
+    "contact": "Susisiekti",
+    "name": "Vardas",
+    "email": "El. paštas",
+    "message": "Jūsų žinutė",
+    "submit": "Siųsti",
+    "submitSuccess": "Jūsų žinutė išsiųsta sėkmingai!",
+    "submitError": "Įvyko klaida, bandykite dar kartą.",
+    "validation": {
+      "name": {
+        "required": "Prašome įvesti savo vardą",
+        "min": "Vardas yra per trumpas",
+        "max": "Vardas yra per ilgas",
+        "onlyLetters": "Varde gali būti tik raidės"
+      },
+      "email": {
+        "invalid": "Neteisingas el. pašto formatas",
+        "required": "El. paštas yra privalomas",
+        "max": "El. paštas per ilgas"
+      },
+      "message": {
+        "required": "Žinutė yra privaloma",
+        "min": "Žinutė yra per trumpa",
+        "max": "Žinutė yra per ilga"
+      }
+    }
+  },
+  "meta": {
+    "title": "Remigijus Prialgauskis - Tinklalapių Kūrėjas",
+    "description": "Profesionalus Remigijaus Prialgauskio portfolio, kuriame pristatomi tinklalapių kūrimo projektai ir įgūdžiai Nuxt, Figma, MongoDB ir daugelyje kitų."
+  },
+  "pages": {
+    "home": "Pagrindinis",
+    "projects": "Projektai",
+    "contact": "Kontaktai"
+  }
+}

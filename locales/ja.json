@@ -1,0 +1,143 @@
+{
+  "name": "レミギユス・プリアルガウスキス",
+  "jobTitle": "コンピューターサイエンスの3年生",
+  "shortBio": "モダンで魅力的かつ高速なウェブサイトを作成しています。",
+  "nav": {
+    "about": "ABOUT",
+    "experience": "経験",
+    "projects": "プロジェクト"
+  },
+  "about": {
+    "paragraphs": {
+      "0": "こんにちは！コンピューターサイエンスの3年生で、魅力的で高速なウェブアプリケーションの作成を学んでいます。",
+      "1": "多くの異なる技術に取り組んできましたが、現在はNuxt（Vueフレームワークの拡張）を使用したフルスタック開発に注力しています。",
+      "2": "常に自分のスキルを実世界の問題に適用し、同じ考えを持つ開発者と協力する機会を探しています。",
+      "3": "学業の中で、ラトビアとドイツでのErasmusプログラムBlended Intensive Programs（BIPs）に参加して追加の経験を積みました。",
+      "4": "最近、ラトビアのリガで3か月間のインターンシップを修了し、プロフェッショナルな環境で実践的なスキルを強化しました。",
+      "5": "プログラミングをしていないときは、ほとんどの自由な時間をコンピューターで様々なITビデオを見たり、アニメを見たり、少しずつ日本語を学んだり、友達とコンピューターゲームをしたりして過ごしています。"
+    }
+  },
+  "builtWith": "NuxtとTailwind CSSを使用して作成し、Vercelにホスティングしています。すべてのテキストは",
+  "inter": "Inter",
+  "typeface": "フォントです。",
+  "portfolioCredit": "",
+  "experience": {
+    "title": "経験",
+    "downloadResume": "履歴書をダウンロード",
+    "resumeUrl": "/Remigijus-Prialgauskis-cv-lt.pdf",
+    "items": {
+      "0": {
+        "period": "2022 — 現在",
+        "title": "コンピューターサイエンスの学生",
+        "company": "KVK - クライペダ州立大学",
+        "link": "https://kvk.lt",
+        "description": "学業中に、ウェブサイトやモバイルアプリケーションの作成から、Godotエンジンを使用したゲーム開発まで、多くの異なる技術に取り組んできました。",
+        "detailedDescription": "1年目：\nHTML、CSS（Bootstrap）、JavaScriptを使用して1つのウェブサイトを作成し、PHPとTailwind CSSを使用してもう1つのウェブサイトを作成しました。また、Unityを使用して3Dテトリスゲームを2人のクラスメートと協力して作成しました。\n\n2年目：\n2人のクラスメートと協力して、MERN技術スタックを使用して求人掲示板サイトを作成しました。このプロジェクトは科学論文として書かれ、KVK技術会議で発表されました。2年目の課題には、NuxtフレームワークとTailwind CSSを初めて使用し、サーバー側にNode.jsを使用して実績評価システムのウェブアプリケーションを作成しました。もう1つの主要なプロジェクトは、ヴィリニュスのクライアントのためにAndroid Studioで開発されたモバイルアプリケーションでした。5人の学生チームで、スマートホームシステムを選択するのを助けるアプリを2か月で作成しました。私はスクラムマスターの役割、デザイン、フロントエンド開発を担当しました。\n\n3年目：\n情報は更新中です。",
+        "skills": "Figma,HTML,CSS、Bootstrap、Tailwind CSS,JavaScript,TypeScript,React,Vue,Nuxt,PHP,Java,Android Studio,Unity,Godotエンジン,Trello,Agile",
+        "github": ""
+      },
+      "1": {
+        "period": "2024年5月 — 7月",
+        "title": "ラトビアでの3か月間のインターンシップ",
+        "company": "トゥリーバ大学",
+        "link": "https://www.turiba.lv/en",
+        "description": "KVKの他の2人の学生と一緒に、さまざまなタイプのユーザーが安全にログインできるLMS（学習管理システム）を開発しました。私はチームリーダー、デザイン、フロントエンド開発を担当しました。",
+        "detailedDescription": "-",
+        "skills": "Figma,Tailwind CSS,Nuxt,Node.js,MongoDB",
+        "github": "https://github.com/RemiPR/Turiba-University-Erasmus-Project"
+      },
+      "2": {
+        "period": "2022 — 2022",
+        "title": "480時間のJavaScriptフルスタックインターンシップ",
+        "company": "UAB Oigreat（旧UAB Iverta）",
+        "link": "https://www.iverta.eu/namai/",
+        "description": "インターンシップ中に、新しい技術を試し、初めてサーバーサイドプログラミングに取り組み、さまざまなフレームワークやライブラリを使用しました。",
+        "detailedDescription": "",
+        "skills": "HTML,CSS（Sass）,JavaScript,TypeScript,React,Firebase DB,Node.js",
+        "github": ""
+      }
+    }
+  },
+  "projects": {
+    "title": "プロジェクト",
+    "items": {
+      "0": {
+        "title": "LMS - 学習管理システム",
+        "company": "3か月のインターンシップ - トゥリーバ大学",
+        "link": "https://www.example.com",
+        "github": "https://github.com/RemiPR/Turiba-University-Erasmus-Project",
+        "image": "/placeholder.jpg",
+        "images": "/placeholder.jpg,/placeholder.jpg,/placeholder.jpg",
+        "description": "3か月のインターンシップ中に、KVKの3人の学生がさまざまなタイプのユーザーが安全にログインできるLMSを開発しました。私はチームリーダー、デザイン、フロントエンド開発を担当しました。",
+        "detailedDescription": "モーダル用の長く詳細な説明。",
+        "skills": "Figma,Tailwind CSS,Nuxt,Node.js,MongoDB"
+      },
+      "1": {
+        "title": "スマートホームアプリ",
+        "company": "会社名",
+        "link": "",
+        "github": "",
+        "image": "/placeholder.jpg",
+        "images": "",
+        "description": "カード用の短い説明",
+        "detailedDescription": "モーダル用の長く詳細な説明。",
+        "skills": "Android Studio,Kotlin,Trello,Agile,Confluence"
+      },
+      "2": {
+        "title": "ランディングページ",
+        "company": "www.landing.com",
+        "link": "https://www.upstatement.com/",
+        "github": "",
+        "image": "/placeholder.jpg",
+        "images": "",
+        "description": "Klaviyoの製品全体でフロントエンド開発に使用される重要なコンポーネントを作成および維持します。開発者、デザイナー、プロダクトマネージャーを含むクロスファンクショナルなチームと密接に協力し、Webアクセシビリティのベストプラクティスを実装および推進します。",
+        "detailedDescription": "",
+        "skills": "JavaScript,TypeScript,React,Storybook"
+      }
+    }
+  },
+  "theme": "light",
+  "loading": "読み込み中...",
+  "modal": {
+    "about": "詳細な説明",
+    "technologies": "使用技術",
+    "website": "ウェブサイト",
+    "close": "閉じる"
+  },
+  "contactForm": {
+    "contact": "お問い合わせ",
+    "name": "名前",
+    "email": "メールアドレス",
+    "message": "メッセージ",
+    "submit": "送信",
+    "submitSuccess": "メッセージが正常に送信されました！",
+    "submitError": "エラーが発生しました。もう一度お試しください。",
+    "validation": {
+      "name": {
+        "required": "名前を入力してください",
+        "min": "名前が短すぎます",
+        "max": "名前が長すぎます",
+        "onlyLetters": "名前には文字のみを使用できます"
+      },
+      "email": {
+        "invalid": "無効なメールフォーマット",
+        "required": "メールは必須です",
+        "max": "メールが長すぎます"
+      },
+      "message": {
+        "required": "メッセージは必須です",
+        "min": "メッセージが短すぎます",
+        "max": "メッセージが長すぎます"
+      }
+    }
+  },
+  "meta": {
+    "title": "レミギユス・プリアルガウスキス - ウェブ開発者",
+    "description": "レミギユス・プリアルガウスキスのプロフェッショナルポートフォリオ、Nuxt、Figma、MongoDBなどのウェブ開発プロジェクトとスキルを紹介。"
+  },
+  "pages": {
+    "home": "ホーム",
+    "projects": "プロジェクト",
+    "contact": "連絡先"
+  }
+}

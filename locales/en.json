@@ -1,0 +1,143 @@
+{
+  "name": "Remigijus Prialgauskis",
+  "jobTitle": "Third-year Computer Science Student",
+  "shortBio": "I create modern, attractive, and fast websites.",
+  "nav": {
+    "about": "ABOUT",
+    "experience": "EXPERIENCE",
+    "projects": "PROJECTS"
+  },
+  "about": {
+    "paragraphs": {
+      "0": "Hello! I am a third-year computer science student, learning to create attractive and fast web applications.",
+      "1": "I have worked with many different technologies, but currently, I am focusing on full-stack development using Nuxt (an extension of the Vue framework).",
+      "2": "I am always looking for opportunities to apply my skills to real-world problems and collaborate with like-minded developers.",
+      "3": "During my studies, I gained additional experience by participating in Erasmus programs Blended Intensive Programs (BIPs) in Latvia and Germany.",
+      "4": "I also recently completed a 3-month internship in Riga, Latvia, where I strengthened my practical skills in a professional environment.",
+      "5": "When I'm not programming, I spend most of my free time watching various IT videos on my computer, watching anime, gradually learning Japanese, and playing computer games with friends."
+    }
+  },
+  "builtWith": "Built with Nuxt and Tailwind CSS, hosted on Vercel. All text set in",
+  "inter": "Inter",
+  "typeface": "typeface.",
+  "portfolioCredit": "",
+  "experience": {
+    "title": "Experience",
+    "downloadResume": "Download Resume",
+    "resumeUrl": "/Remigijus-Prialgauskis-cv-lt.pdf",
+    "items": {
+      "0": {
+        "period": "2022 — PRESENT",
+        "title": "Computer Science Student",
+        "company": "KVK - Klaipėda State College",
+        "link": "https://kvk.lt",
+        "description": "During my studies, I worked with many different technologies, from creating websites and mobile applications using Android Studio to game development using Godot Engine.",
+        "detailedDescription": "First Year:\nI created two websites, one using HTML, CSS (Bootstrap), and JavaScript, and another using PHP and Tailwind CSS. I also collaborated with two classmates to create a 3D Tetris game using Unity.\n\nSecond Year:\nI collaborated with two classmates to create a job posting website using the MERN technology stack. This project was written up as a scientific article and presented at the KVK technology conference. My second-year coursework included a project where I first used the Nuxt framework with Tailwind CSS and Node.js for the backend to create an achievement evaluation system web application. Another major project was a mobile application developed with Android Studio for a client in Vilnius. Working in a team of five students, we created an app to help users choose a smart home system. I was responsible for the Scrum master role, design, and frontend development.\n\nThird Year:\nInformation is being updated.",
+        "skills": "Figma,HTML,CSS, Bootstrap, Tailwind CSS,JavaScript,TypeScript,React,Vue,Nuxt,PHP,Java,Android Studio,Unity,Godot engine,Trello,Agile",
+        "github": ""
+      },
+      "1": {
+        "period": "MAY — JUL 2024",
+        "title": "3-month Internship in Latvia",
+        "company": "Turiba University",
+        "link": "https://www.turiba.lv/en",
+        "description": "Together with two other students from KVK, I developed an LMS (Learning Management System) where different types of users could securely log in. I was responsible for team leadership, design, and frontend development.",
+        "detailedDescription": "-",
+        "skills": "Figma,Tailwind CSS,Nuxt,Node.js,MongoDB",
+        "github": "https://github.com/RemiPR/Turiba-University-Erasmus-Project"
+      },
+      "2": {
+        "period": "2022 — 2022",
+        "title": "480-hour JavaScript Full-Stack Internship",
+        "company": "UAB Oigreat (formerly UAB Iverta)",
+        "link": "https://www.iverta.eu/namai/",
+        "description": "During the internship, I experimented with new technologies, touched server-side programming for the first time, and used various frameworks and libraries.",
+        "detailedDescription": "",
+        "skills": "HTML,CSS (Sass),JavaScript,TypeScript,React,Firebase DB,Node.js",
+        "github": ""
+      }
+    }
+  },
+  "projects": {
+    "title": "Projects",
+    "items": {
+      "0": {
+        "title": "LMS - Learning Management System",
+        "company": "3-month internship - Turiba University",
+        "link": "https://www.example.com",
+        "github": "https://github.com/RemiPR/Turiba-University-Erasmus-Project",
+        "image": "/placeholder.jpg",
+        "images": "/placeholder.jpg,/placeholder.jpg,/placeholder.jpg",
+        "description": "During a 3-month internship, three students from KVK developed an LMS where different types of users could securely log in. I was responsible for team leadership, design, and frontend development.",
+        "detailedDescription": "A longer, more detailed description for the modal.",
+        "skills": "Figma,Tailwind CSS,Nuxt,Node.js,MongoDB"
+      },
+      "1": {
+        "title": "Smart Home App",
+        "company": "Company Name",
+        "link": "",
+        "github": "",
+        "image": "/placeholder.jpg",
+        "images": "",
+        "description": "Short description for the card",
+        "detailedDescription": "A longer, more detailed description for the modal.",
+        "skills": "Android Studio,Kotlin,Trello,Agile,Confluence"
+      },
+      "2": {
+        "title": "Landing Page",
+        "company": "www.landing.com",
+        "link": "https://www.upstatement.com/",
+        "github": "",
+        "image": "/placeholder.jpg",
+        "images": "",
+        "description": "Create and maintain important components used in Klaviyo's frontend development across the product. Collaborate closely with cross-functional teams, including developers, designers, and product managers, to implement and promote best practices for web accessibility.",
+        "detailedDescription": "",
+        "skills": "JavaScript,TypeScript,React,Storybook"
+      }
+    }
+  },
+  "theme": "light",
+  "loading": "Loading...",
+  "modal": {
+    "about": "Detailed Description",
+    "technologies": "Used Technologies",
+    "website": "Website",
+    "close": "Close"
+  },
+  "contactForm": {
+    "contact": "Contact",
+    "name": "Name",
+    "email": "Email",
+    "message": "Your message",
+    "submit": "Submit",
+    "submitSuccess": "Your message was successfully sent!",
+    "submitError": "An error occurred, please try again.",
+    "validation": {
+      "name": {
+        "required": "Please enter your name",
+        "min": "Name is too short",
+        "max": "Name is too long",
+        "onlyLetters": "Name can only contain letters"
+      },
+      "email": {
+        "invalid": "Invalid email format",
+        "required": "Email is required",
+        "max": "Email is too long"
+      },
+      "message": {
+        "required": "Message is required",
+        "min": "Message is too short",
+        "max": "Message is too long"
+      }
+    }
+  },
+  "meta": {
+    "title": "Remigijus Prialgauskis - Web Developer",
+    "description": "Professional portfolio of Remigijus Prialgauskis, showcasing web development projects and skills in Nuxt, Figma, MongoDB and many more."
+  },
+  "pages": {
+    "home": "Home",
+    "projects": "Projects",
+    "contact": "Contact"
+  }
+}
