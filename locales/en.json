@@ -9,51 +9,51 @@
   },
   "about": {
     "paragraphs": {
-      "0": "Hello! I am a third-year computer science student, learning to create attractive and fast web applications.",
-      "1": "I have worked with many different technologies, but currently, I am focusing on full-stack development using Nuxt (an extension of the Vue framework).",
-      "2": "I am always looking for opportunities to apply my skills to real-world problems and collaborate with like-minded developers.",
-      "3": "During my studies, I gained additional experience by participating in Erasmus programs Blended Intensive Programs (BIPs) in Latvia and Germany.",
+      "0": "Hello! I'm a third-year computer science student, learning to create attractive and fast web applications.",
+      "1": "I've worked with various technologies, but currently, I'm focusing on full-stack development using Nuxt (an extension of the Vue framework).",
+      "2": "I'm always looking for opportunities to apply my skills to real-world problems and collaborate with like-minded developers.",
+      "3": "During my studies, I gained additional experience by participating in Erasmus Blended Intensive Programs (BIPs) in Latvia and Germany.",
       "4": "I also recently completed a 3-month internship in Riga, Latvia, where I strengthened my practical skills in a professional environment.",
-      "5": "When I'm not programming, I spend most of my free time watching various IT videos on my computer, watching anime, gradually learning Japanese, and playing computer games with friends."
+      "5": "When I'm not programming, I spend most of my free time at the computer watching various IT videos. I also enjoy watching anime, learning Japanese bit by bit, and playing computer games with friends."
     }
   },
-  "builtWith": "Built with Nuxt and Tailwind CSS, hosted on Vercel. All text set in",
+  "builtWith": "Built using Nuxt and Tailwind CSS, hosted on Vercel. All text is set in the",
   "inter": "Inter",
   "typeface": "typeface.",
   "portfolioCredit": "",
   "experience": {
     "title": "Experience",
-    "downloadResume": "Download Resume",
-    "resumeUrl": "/Remigijus-Prialgauskis-cv-lt.pdf",
+    "downloadResume": "Download CV",
+    "resumeUrl": "/Remigijus-Prialgauskis-cv-en.pdf",
     "items": {
       "0": {
         "period": "2022 — PRESENT",
         "title": "Computer Science Student",
-        "company": "KVK - Klaipėda State College",
-        "link": "https://kvk.lt",
-        "description": "During my studies, I worked with many different technologies, from creating websites and mobile applications using Android Studio to game development using Godot Engine.",
-        "detailedDescription": "First Year:\nI created two websites, one using HTML, CSS (Bootstrap), and JavaScript, and another using PHP and Tailwind CSS. I also collaborated with two classmates to create a 3D Tetris game using Unity.\n\nSecond Year:\nI collaborated with two classmates to create a job posting website using the MERN technology stack. This project was written up as a scientific article and presented at the KVK technology conference. My second-year coursework included a project where I first used the Nuxt framework with Tailwind CSS and Node.js for the backend to create an achievement evaluation system web application. Another major project was a mobile application developed with Android Studio for a client in Vilnius. Working in a team of five students, we created an app to help users choose a smart home system. I was responsible for the Scrum master role, design, and frontend development.\n\nThird Year:\nInformation is being updated.",
+        "company": "KVK - Klaipėda State University of Applied Sciences",
+        "link": "https://www.ku.lt/cris/entities/publication/6b727b31-a23f-4013-89a3-39f2ab7cb25c",
+        "description": "Throughout my studies, I've worked with numerous technologies, ranging from website development to mobile app creation using Android Studio, and even game development using Godot Engine.",
+        "detailedDescription": "First year:\nI created two websites, one using HTML, CSS (Bootstrap), and JavaScript, and another using PHP and Tailwind CSS. Additionally, I collaborated with two classmates to develop a 3D Tetris game using Unity.\n\nSecond year:\nWorking with two classmates, we developed a job board website using the MERN stack architecture. A scientific paper was written about this project and presented at the KVK technology conference. You can view this paper by clicking the link below.\nMy next project in the second year was my coursework, where I first experimented with the Nuxt framework and Tailwind CSS, using Node.js for the back-end. I created a web application for an achievement assessment system, where users can log in as teachers to perform CRUD operations on created tests, which can then be taken by users logged in as students.\nAnother significant project in the second year was developing a mobile application for a client from Vilnius using Android Studio. In a team of 5 students, we had 2 months to create a mobile app that would help users choose a smart home system based on a completed questionnaire and direct them to relevant suppliers who could install these desired services. We used Agile methodology throughout the development process. I was responsible for the Scrum master duties, as well as the design and front-end of the mobile application.\n\nThird year:\nThe academic year hasn't started yet.",
         "skills": "Figma,HTML,CSS, Bootstrap, Tailwind CSS,JavaScript,TypeScript,React,Vue,Nuxt,PHP,Java,Android Studio,Unity,Godot engine,Trello,Agile",
         "github": ""
       },
       "1": {
         "period": "MAY — JUL 2024",
-        "title": "3-month Internship in Latvia",
+        "title": "3-month internship in Latvia",
         "company": "Turiba University",
-        "link": "https://www.turiba.lv/en",
-        "description": "Together with two other students from KVK, I developed an LMS (Learning Management System) where different types of users could securely log in. I was responsible for team leadership, design, and frontend development.",
-        "detailedDescription": "-",
+        "link": "https://scrolle.me",
+        "description": "Three students from KVK completed this internship. We were tasked with creating a prototype of an LMS - Learning Management System, which would allow secure login for 5 different types of users. I was responsible for team leadership, project planning, design, and front-end development. We created the design ourselves, and I personally developed most of the front-end.",
+        "detailedDescription": "Due to the project's scope, requirements, and time constraints, we created a minimal prototype, so a large part of the functionality wasn't completed. However, the available time was used effectively, and we learned many new things during this period. More details are provided in the projects section below.",
         "skills": "Figma,Tailwind CSS,Nuxt,Node.js,MongoDB",
         "github": "https://github.com/RemiPR/Turiba-University-Erasmus-Project"
       },
       "2": {
         "period": "2022 — 2022",
-        "title": "480-hour JavaScript Full-Stack Internship",
+        "title": "480-hour JavaScript full-stack internship",
         "company": "UAB Oigreat (formerly UAB Iverta)",
         "link": "https://www.iverta.eu/namai/",
-        "description": "During the internship, I experimented with new technologies, touched server-side programming for the first time, and used various frameworks and libraries.",
+        "description": "During this internship, I experimented with previously untried technologies, touched on server-side programming for the first time, and explored various frameworks and libraries. I created a single-page website based on a provided design mockup.",
         "detailedDescription": "",
-        "skills": "HTML,CSS (Sass),JavaScript,TypeScript,React,Firebase DB,Node.js",
+        "skills": "HTML,CSS(Sass),JavaScript,TypeScript,React,Firebase DB,Node.js",
         "github": ""
       }
     }
@@ -63,44 +63,55 @@
     "items": {
       "0": {
         "title": "LMS - Learning Management System",
-        "company": "3-month internship - Turiba University",
-        "link": "https://www.example.com",
+        "company": "3-month internship - Turiba University ",
+        "link": "https://scrolle.me",
         "github": "https://github.com/RemiPR/Turiba-University-Erasmus-Project",
-        "image": "/placeholder.jpg",
-        "images": "/placeholder.jpg,/placeholder.jpg,/placeholder.jpg",
-        "description": "During a 3-month internship, three students from KVK developed an LMS where different types of users could securely log in. I was responsible for team leadership, design, and frontend development.",
-        "detailedDescription": "A longer, more detailed description for the modal.",
+        "image": "/student_bg.png",
+        "images": "/student_bg.png, /management_bg.png, /guest_bg.png, /guest_admission.png, /teacher_groups.png",
+        "description": "Three students from KVK completed this internship. We were tasked with creating an LMS - Learning Management System, which would allow secure login for multiple types of users. I was responsible for team leadership, design, and front-end development. We created the design ourselves, and I personally developed most of the front-end.",
+        "detailedDescription": "This ambitious project was developed by 3 students and one internship supervisor. The goal was to create a Learning Management System (LMS) that would be secure, user-friendly, and have core functionality similar to Moodle. This project aimed to address the contemporary issues of other learning management systems like Moodle, which are often overly complex, have too much unnecessary functionality, and aren't visually appealing. Due to the project's scope and time constraints, we created a minimal prototype, but the available time was used effectively, and we learned many new things during this period. The backend is currently disabled, so authorization doesn't work. All pages can be accessed directly by entering one of the desired user types in the URL: e.g., https://scrolle.me/guest, /student, /teacher, /management. P.S. Dark mode and language selection only work on some pages.",
         "skills": "Figma,Tailwind CSS,Nuxt,Node.js,MongoDB"
       },
       "1": {
-        "title": "Smart Home App",
-        "company": "Company Name",
-        "link": "",
-        "github": "",
-        "image": "/placeholder.jpg",
-        "images": "",
-        "description": "Short description for the card",
-        "detailedDescription": "A longer, more detailed description for the modal.",
+        "title": "Smart Home Solutions",
+        "company": "UAB Jung Vilnius",
+        "link": "https://www.jung.de/lt/",
+        "github": "https://github.com/H1X4Dev/KVK-Agile",
+        "image": "/app_1.png",
+        "images": "/app_1.png, /app_2.png, /app_3.png",
+        "description": "This mobile app was developed by 5 students using Agile methodology. I was responsible for Scrum master duties, as well as the design and front-end of the mobile application.",
+        "detailedDescription": "We used Kotlin through Android Studio to create this app. We adhered to the best programming practices learned during our studies (SOLID principles). The app's purpose was to help users choose a smart home system based on a completed questionnaire and direct them to relevant suppliers who could install these desired services.",
         "skills": "Android Studio,Kotlin,Trello,Agile,Confluence"
       },
       "2": {
-        "title": "Landing Page",
-        "company": "www.landing.com",
-        "link": "https://www.upstatement.com/",
+        "title": "Student Achievement Assessment System",
+        "company": "KVK coursework",
+        "link": "",
         "github": "",
-        "image": "/placeholder.jpg",
-        "images": "",
-        "description": "Create and maintain important components used in Klaviyo's frontend development across the product. Collaborate closely with cross-functional teams, including developers, designers, and product managers, to implement and promote best practices for web accessibility.",
+        "image": "/assessment_system_3.png",
+        "images": "/assessment_system_3.png, /assessment_system_1.png, /assessment_system_2.png",
+        "description": "I developed this coursework independently, experimenting with the Nuxt framework and Tailwind CSS for the first time, while using Node.js for the back-end. I created a web application for an achievement assessment system where users can log in as teachers to perform CRUD operations on created tests, which can then be taken by users logged in as students.",
+        "detailedDescription": "In this assessment system, tests from the database are displayed, which can be created/modified/deleted by logged-in teachers. There's also a filtering functionality that allows sorting tests by groups, number of questions, time limit, etc.",
+        "skills": "Nuxt,Tailwind CSS,Node.js,MongoDB"
+      },
+      "3": {
+        "title": "Job Board Portal",
+        "company": "KVK project work",
+        "link": "",
+        "github": "",
+        "image": "/job_portal_1.png",
+        "images": "/job_portal_1.png, /job_portal_2.png, /job_portal_3.png",
+        "description": "I developed this project with two colleagues, using the MERN architecture for the first time. A scientific paper about this project was presented at the KVK technology conference, which you can find by clicking on the link that will be visible when you click on this project card.",
         "detailedDescription": "",
-        "skills": "JavaScript,TypeScript,React,Storybook"
+        "skills": "React,Tailwind CSS,Node.js,MongoDB"
       }
     }
   },
   "theme": "light",
   "loading": "Loading...",
   "modal": {
-    "about": "Detailed Description",
-    "technologies": "Used Technologies",
+    "about": "Detailed description",
+    "technologies": "Technologies used",
     "website": "Website",
     "close": "Close"
   },
@@ -109,8 +120,8 @@
     "name": "Name",
     "email": "Email",
     "message": "Your message",
-    "submit": "Submit",
-    "submitSuccess": "Your message was successfully sent!",
+    "submit": "Send",
+    "submitSuccess": "Your message has been sent successfully!",
     "submitError": "An error occurred, please try again.",
     "validation": {
       "name": {
@@ -133,7 +144,7 @@
   },
   "meta": {
     "title": "Remigijus Prialgauskis - Web Developer",
-    "description": "Professional portfolio of Remigijus Prialgauskis, showcasing web development projects and skills in Nuxt, Figma, MongoDB and many more."
+    "description": "Professional portfolio of Remigijus Prialgauskis, showcasing web development projects and skills in Nuxt, Figma, MongoDB, and many others."
   },
   "pages": {
     "home": "Home",
