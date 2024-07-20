@@ -50,12 +50,15 @@
                 <div class="mt-3 text-center sm:mt-0 sm:text-left w-full">
                   <!-- Main Image -->
                   <div v-if="imageArray.length" class="mb-4 relative group">
-                    <img
-                      :src="mainImage"
-                      alt="Main Image"
-                      class="w-full h-96 object-cover rounded-lg cursor-pointer"
-                      @click="openFullScreenImage(mainImage)"
-                    />
+                    <Transition name="fade" mode="out-in">
+                      <img
+                        :key="mainImage"
+                        :src="mainImage"
+                        alt="Main Image"
+                        class="w-full h-96 object-contain rounded-lg cursor-pointer"
+                        @click="openFullScreenImage(mainImage)"
+                      />
+                    </Transition>
                     <div
                       class="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none"
                     >
@@ -231,16 +234,21 @@
         class="fixed inset-0 z-[60] flex flex-col items-center justify-center bg-black bg-opacity-90 p-4"
         @click="closeFullScreenImage"
       >
-        <div class="relative max-w-[90vw] max-h-[80vh] mb-4">
-          <img
-            :src="fullScreenImage"
-            alt="Full-screen Image"
-            class="max-w-full max-h-full object-contain cursor-pointer"
-            @click="closeFullScreenImage"
-          />
+        <div
+          class="relative w-full h-[80vh] mb-4 flex items-center justify-center"
+        >
+          <Transition name="fade" mode="out-in">
+            <img
+              :key="fullScreenImage"
+              :src="fullScreenImage"
+              alt="Full-screen Image"
+              class="max-w-full max-h-full w-auto h-auto object-contain cursor-pointer"
+              @click.stop
+            />
+          </Transition>
           <button
             @click.stop="closeFullScreenImage"
-            class="absolute top-2 right-2 text-white text-4xl hover:text-gray-300 focus:outline-none"
+            class="absolute -top-4 -right-4 text-white text-4xl hover:text-gray-300 focus:outline-none w-12 h-12 bg-black bg-opacity-50 rounded-full flex items-center justify-center border-2 border-white"
           >
             &times;
           </button>
@@ -408,6 +416,15 @@ onUnmounted(() => {
   transform: scale(1);
 }
 
+.fade-enter-active,
+.fade-leave-active {
+  transition: opacity 0.4s ease;
+}
+
+.fade-enter-from,
+.fade-leave-to {
+  opacity: 0.1;
+}
 /* Custom scrollbar styles */
 .max-h-80 {
   scrollbar-width: thin;
