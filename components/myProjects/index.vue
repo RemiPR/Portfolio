@@ -30,16 +30,18 @@
           </li>
         </ul>
       </div>
-      <img
+      <div
         v-if="project.image"
-        :alt="`${project.title} project screenshot`"
-        loading="lazy"
-        width="200"
-        height="48"
-        decoding="async"
-        :src="project.image"
-        class="rounded border-2 border-slate-200/10 transition group-hover:border-slate-200/30 sm:order-1 sm:col-span-2 sm:translate-y-1"
-      />
+        class="relative w-full h-[100px] overflow-hidden rounded border-2 border-slate-200/10 transition group-hover:border-slate-200/30 sm:order-1 sm:col-span-2 sm:translate-y-1"
+      >
+        <img
+          :alt="`${project.title} project screenshot`"
+          loading="lazy"
+          decoding="async"
+          :src="project.image"
+          class="absolute inset-0 w-full h-full object-cover object-center"
+        />
+      </div>
     </div>
 
     <Modal

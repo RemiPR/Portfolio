@@ -234,21 +234,20 @@
         class="fixed inset-0 z-[60] flex flex-col items-center justify-center bg-black bg-opacity-90 p-4"
         @click="closeFullScreenImage"
       >
-        <div
-          class="relative w-full h-[80vh] mb-4 flex items-center justify-center"
-        >
+        <div class="relative max-w-[90vw] max-h-[80vh] mb-4">
           <Transition name="fade" mode="out-in">
             <img
               :key="fullScreenImage"
               :src="fullScreenImage"
               alt="Full-screen Image"
-              class="max-w-full max-h-full w-auto h-auto object-contain cursor-pointer"
-              @click.stop
+              class="max-w-full max-h-full w-auto h-auto object-contain"
+              @click.stop="closeFullScreenImage"
             />
           </Transition>
           <button
             @click.stop="closeFullScreenImage"
-            class="absolute -top-4 -right-4 text-white text-4xl hover:text-gray-300 focus:outline-none w-12 h-12 bg-black bg-opacity-50 rounded-full flex items-center justify-center border-2 border-white"
+            class="absolute -top-4 -right-4 text-white text-2xl hover:text-gray-300 focus:outline-none w-8 h-8 bg-black bg-opacity-50 rounded-full flex items-center justify-center border border-white"
+            aria-label="Close full-screen image"
           >
             &times;
           </button>
