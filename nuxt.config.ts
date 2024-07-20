@@ -6,6 +6,7 @@ export default defineNuxtConfig({
     "@nuxtjs/i18n",
     "@vee-validate/nuxt",
     "vue3-carousel-nuxt",
+    "nuxt-swiper",
   ],
   css: ["@/assets/css/inter.css"],
   googleFonts: {

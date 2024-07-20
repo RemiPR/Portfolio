@@ -113,7 +113,8 @@
     "about": "Detailed description",
     "technologies": "Technologies used",
     "website": "Website",
-    "close": "Close"
+    "close": "Close",
+    "imgCounter": "of"
   },
   "contactForm": {
     "contact": "Contact",

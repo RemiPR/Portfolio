@@ -48,23 +48,44 @@
 
               <div class="sm:flex sm:items-start">
                 <div class="mt-3 text-center sm:mt-0 sm:text-left w-full">
-                  <!-- Main Image -->
+                  <!-- Main Image Swiper -->
                   <div v-if="imageArray.length" class="mb-4 relative group">
-                    <Transition name="fade" mode="out-in">
-                      <img
-                        :key="mainImage"
-                        :src="mainImage"
-                        alt="Main Image"
-                        class="w-full h-96 object-contain rounded-lg cursor-pointer"
-                        @click="openFullScreenImage(mainImage)"
-                      />
-                    </Transition>
+                    <Swiper
+                      :modules="[SwiperNavigation]"
+                      :slides-per-view="1"
+                      :space-between="30"
+                      :navigation="{
+                        nextEl: '.swiper-button-next',
+                        prevEl: '.swiper-button-prev',
+                      }"
+                      :loop="true"
+                      :speed="850"
+                      @swiper="setMainSwiper"
+                      @slideChange="handleMainSlideChange"
+                      class="w-full h-96"
+                    >
+                      <SwiperSlide
+                        v-for="(image, index) in imageArray"
+                        :key="index"
+                        class="flex items-center justify-center"
+                      >
+                        <img
+                          :src="image"
+                          :alt="`Image ${index + 1}`"
+                          class="w-full h-96 object-contain rounded-lg cursor-pointer"
+                          @click="openFullScreenImage(index)"
+                        />
+                      </SwiperSlide>
+                      <div class="swiper-button-prev" @click.stop></div>
+                      <div class="swiper-button-next" @click.stop></div>
+                    </Swiper>
+
                     <div
-                      class="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none"
+                      class="z-50 absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none"
                     >
                       <svg
                         xmlns="http://www.w3.org/2000/svg"
-                        class="h-12 w-12 text-white"
+                        class="h-12 w-12 text-slate-300"
                         fill="none"
                         viewBox="0 0 24 24"
                         stroke="currentColor"
@@ -79,15 +100,26 @@
                     </div>
                   </div>
 
-                  <!-- Thumbnail Images -->
+                  <!-- Image counter for main modal -->
+                  <div class="flex justify-center my-6">
+                    <div
+                      v-if="imageArray.length > 1"
+                      class="bg-black bg-opacity-50 text-white px-3 py-1 rounded-full text-sm inline-block"
+                    >
+                      {{ currentMainIndex + 1 }} {{ $t("modal.imgCounter") }}
+                      {{ imageArray.length }}
+                    </div>
+                  </div>
+
+                  <!-- Thumbnail Images for main modal -->
                   <div
                     v-if="imageArray.length > 1"
-                    class="flex space-x-2 mb-4 overflow-x-auto"
+                    class="flex justify-center space-x-2 mb-4 overflow-x-auto"
                   >
                     <div
                       v-for="(image, index) in imageArray"
                       :key="index"
-                      @click="setMainImage(image)"
+                      @click="goToMainSlide(index)"
                       class="relative cursor-pointer transition-all duration-300 hover:opacity-80 flex-shrink-0"
                     >
                       <img
@@ -96,12 +128,13 @@
                         class="w-20 h-20 object-cover rounded"
                       />
                       <div
-                        v-if="image === mainImage"
+                        v-if="index === currentMainIndex"
                         class="absolute inset-0 bg-teal-500 bg-opacity-40 rounded"
                       ></div>
                     </div>
                   </div>
 
+                  <!-- Description -->
                   <h4 class="text-lg font-semibold text-slate-200 mb-2">
                     {{ $t("modal.about") }}
                   </h4>
@@ -112,6 +145,7 @@
                     v-html="processedDetailedDescription"
                   ></div>
 
+                  <!-- Technologies -->
                   <div v-if="technologies" class="mb-4">
                     <h4 class="text-lg font-semibold text-slate-200 mb-2">
                       {{ $t("modal.technologies") }}
@@ -231,34 +265,91 @@
     <Transition name="fade">
       <div
         v-if="fullScreenImage"
-        class="fixed inset-0 z-[60] flex flex-col items-center justify-center bg-black bg-opacity-90 p-4"
+        class="fixed inset-0 z-[60] flex flex-col items-center justify-center bg-slate-900 bg-opacity-95 p-4"
         @click="closeFullScreenImage"
+        @keydown="handleKeyDown"
+        tabindex="0"
+        ref="fullScreenModal"
       >
-        <div class="relative max-w-[90vw] max-h-[80vh] mb-4">
-          <Transition name="fade" mode="out-in">
-            <img
-              :key="fullScreenImage"
-              :src="fullScreenImage"
-              alt="Full-screen Image"
-              class="max-w-full max-h-full w-auto h-auto object-contain"
-              @click.stop="closeFullScreenImage"
-            />
-          </Transition>
-          <button
-            @click.stop="closeFullScreenImage"
-            class="absolute -top-4 -right-4 text-white text-2xl hover:text-gray-300 focus:outline-none w-8 h-8 bg-black bg-opacity-50 rounded-full flex items-center justify-center border border-white"
-            aria-label="Close full-screen image"
+        <div
+          class="relative w-full h-[calc(100vh-240px)] flex items-center justify-center"
+        >
+          <Swiper
+            :modules="[SwiperNavigation]"
+            :slides-per-view="1"
+            :space-between="30"
+            :navigation="{
+              nextEl: '.swiper-button-next',
+              prevEl: '.swiper-button-prev',
+            }"
+            :loop="true"
+            :speed="850"
+            :initial-slide="currentFullScreenIndex"
+            @swiper="setFullScreenSwiper"
+            @slideChange="handleFullScreenSlideChange"
+            class="w-full h-full"
           >
-            &times;
-          </button>
+            <SwiperSlide
+              v-for="(image, index) in imageArray"
+              :key="index"
+              class="flex items-center justify-center"
+            >
+              <div class="w-full h-full flex items-center justify-center">
+                <img
+                  :src="image"
+                  :alt="`Full-screen Image ${index + 1}`"
+                  class="max-w-full max-h-full w-auto h-auto object-contain cursor-pointer select-none"
+                  @click.stop="closeFullScreenImage"
+                  @load="() => imageLoaded(index)"
+                />
+                <div
+                  v-if="!imageLoadedIndex[index]"
+                  class="absolute inset-0 flex items-center justify-center bg-slate-900 bg-opacity-50"
+                >
+                  <svg
+                    class="animate-spin h-10 w-10 text-white"
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                  >
+                    <circle
+                      class="opacity-25"
+                      cx="12"
+                      cy="12"
+                      r="10"
+                      stroke="currentColor"
+                      stroke-width="4"
+                    ></circle>
+                    <path
+                      class="opacity-75"
+                      fill="currentColor"
+                      d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"
+                    ></path>
+                  </svg>
+                </div>
+              </div>
+            </SwiperSlide>
+          </Swiper>
+          <div class="swiper-button-prev" @click.stop></div>
+          <div class="swiper-button-next" @click.stop></div>
+        </div>
+
+        <!-- Image counter for full-screen modal -->
+        <div
+          v-if="fullScreenImage"
+          class="mt-4 mb-2 bg-black bg-opacity-50 text-white px-3 py-1 rounded-full text-sm"
+        >
+          {{ fullScreenSwiperInstance ? currentFullScreenIndex + 1 : 1 }}
+          {{ $t("modal.imgCounter") }}
+          {{ imageArray.length }}
         </div>
 
         <!-- Thumbnail row for full-screen view -->
-        <div class="flex space-x-2 overflow-x-auto max-w-[90vw]">
+        <div class="flex space-x-4 mt-2 justify-center">
           <div
             v-for="(image, index) in imageArray"
             :key="index"
-            @click.stop="setFullScreenImage(image)"
+            @click.stop="goToFullScreenSlide(index)"
             class="relative cursor-pointer transition-all duration-300 hover:opacity-80 flex-shrink-0"
           >
             <img
@@ -267,8 +358,11 @@
               class="w-16 h-16 object-cover rounded"
             />
             <div
-              v-if="image === fullScreenImage"
-              class="absolute inset-0 bg-teal-500 bg-opacity-40 rounded"
+              class="absolute inset-0 bg-teal-500 transition-opacity duration-300"
+              :class="{
+                'opacity-40': index === currentFullScreenIndex,
+                'opacity-0': index !== currentFullScreenIndex,
+              }"
             ></div>
           </div>
         </div>
@@ -278,8 +372,12 @@
 </template>
 
 <script setup>
-import { ref, computed, watch, onMounted, onUnmounted } from "vue";
+import { ref, computed, watch, onMounted, onUnmounted, nextTick } from "vue";
 import { useTextDivider } from "@/composables/useTextDivider.js";
+import { Swiper, SwiperSlide } from "swiper/vue";
+import { Navigation } from "swiper/modules";
+import "swiper/css";
+import "swiper/css/navigation";
 
 const props = defineProps({
   show: Boolean,
@@ -308,8 +406,17 @@ const processedDetailedDescription = computed(() => {
 const emit = defineEmits(["close"]);
 
 const aboutSection = ref(null);
-const currentImageIndex = ref(0);
 const fullScreenImage = ref(null);
+const imageLoadedIndex = ref([]);
+const fullScreenModal = ref(null);
+
+// Main modal swiper
+const mainSwiperInstance = ref(null);
+const currentMainIndex = ref(0);
+
+// Full-screen modal swiper
+const fullScreenSwiperInstance = ref(null);
+const currentFullScreenIndex = ref(0);
 
 const imageArray = computed(() => {
   if (Array.isArray(props.images)) {
@@ -324,24 +431,90 @@ const imageArray = computed(() => {
   return [];
 });
 
-const mainImage = ref(imageArray.value[0] || "");
-
-const setMainImage = (image) => {
-  mainImage.value = image;
+const setMainSwiper = (swiper) => {
+  mainSwiperInstance.value = swiper;
 };
 
-const setFullScreenImage = (image) => {
-  fullScreenImage.value = image;
+const setFullScreenSwiper = (swiper) => {
+  fullScreenSwiperInstance.value = swiper;
 };
 
-const openFullScreenImage = (image) => {
-  fullScreenImage.value = image;
+const handleMainSlideChange = () => {
+  if (mainSwiperInstance.value) {
+    currentMainIndex.value = mainSwiperInstance.value.realIndex;
+  }
+};
+
+const handleFullScreenSlideChange = () => {
+  if (fullScreenSwiperInstance.value) {
+    currentFullScreenIndex.value = fullScreenSwiperInstance.value.realIndex;
+  }
+};
+
+const imageLoaded = (index) => {
+  imageLoadedIndex.value[index] = true;
+};
+
+const openFullScreenImage = (index) => {
+  fullScreenImage.value = imageArray.value[index];
+  currentFullScreenIndex.value = index;
+  imageLoadedIndex.value = new Array(imageArray.value.length).fill(false);
+  nextTick(() => {
+    if (fullScreenSwiperInstance.value) {
+      fullScreenSwiperInstance.value.slideTo(index, 0);
+      // Force update of currentFullScreenIndex after Swiper initialization
+      nextTick(() => {
+        currentFullScreenIndex.value = fullScreenSwiperInstance.value.realIndex;
+      });
+    }
+    if (fullScreenModal.value) {
+      fullScreenModal.value.focus();
+    }
+  });
 };
 
 const closeFullScreenImage = () => {
   fullScreenImage.value = null;
+  if (mainSwiperInstance.value) {
+    mainSwiperInstance.value.slideTo(currentFullScreenIndex.value, 0);
+  }
+  currentMainIndex.value = currentFullScreenIndex.value;
 };
 
+const goToMainSlide = (index) => {
+  if (mainSwiperInstance.value) {
+    mainSwiperInstance.value.slideToLoop(index);
+  }
+};
+
+const goToFullScreenSlide = (index) => {
+  if (fullScreenSwiperInstance.value) {
+    fullScreenSwiperInstance.value.slideToLoop(index);
+  }
+};
+
+const goToPreviousFullScreenSlide = () => {
+  if (fullScreenSwiperInstance.value) {
+    fullScreenSwiperInstance.value.slidePrev();
+  }
+};
+
+const goToNextFullScreenSlide = () => {
+  if (fullScreenSwiperInstance.value) {
+    fullScreenSwiperInstance.value.slideNext();
+  }
+};
+const goToPreviousMainSlide = () => {
+  if (mainSwiperInstance.value) {
+    mainSwiperInstance.value.slidePrev();
+  }
+};
+
+const goToNextMainSlide = () => {
+  if (mainSwiperInstance.value) {
+    mainSwiperInstance.value.slideNext();
+  }
+};
 const disableBodyScroll = () => {
   if (process.client) {
     const scrollbarWidth =
@@ -379,7 +552,8 @@ watch(
   () => imageArray.value,
   (newImages) => {
     if (newImages && newImages.length) {
-      mainImage.value = newImages[0];
+      currentMainIndex.value = 0;
+      currentFullScreenIndex.value = 0;
     }
   }
 );
@@ -389,85 +563,106 @@ onMounted(() => {
     disableBodyScroll();
     document.body.classList.add("modal-open");
   }
+
+  document.addEventListener("keydown", handleKeyDown);
 });
 
 onUnmounted(() => {
   enableBodyScroll();
   document.body.classList.remove("modal-open");
+  document.removeEventListener("keydown", handleKeyDown);
 });
+
+const handleKeyDown = (event) => {
+  if (fullScreenImage.value) {
+    if (event.key === "Escape") {
+      closeFullScreenImage();
+    } else if (event.key === "ArrowLeft") {
+      goToPreviousFullScreenSlide();
+    } else if (event.key === "ArrowRight") {
+      goToNextFullScreenSlide();
+    }
+  } else {
+    if (event.key === "ArrowLeft") {
+      goToPreviousMainSlide();
+    } else if (event.key === "ArrowRight") {
+      goToNextMainSlide();
+    }
+  }
+};
 </script>
 
-<style scoped>
+<style lang="postcss" scoped>
 .modal-enter-active,
 .modal-leave-active {
-  transition: opacity 0.3s ease, transform 0.3s ease;
+  @apply transition-all duration-300 ease-in-out;
 }
 
 .modal-enter-from,
 .modal-leave-to {
-  opacity: 0;
-  transform: scale(0.95);
+  @apply opacity-0 scale-95;
 }
 
 .modal-enter-to,
 .modal-leave-from {
-  opacity: 1;
-  transform: scale(1);
+  @apply opacity-100 scale-100;
 }
 
 .fade-enter-active,
 .fade-leave-active {
-  transition: opacity 0.4s ease;
+  @apply transition-opacity duration-300 ease-in-out;
 }
 
 .fade-enter-from,
 .fade-leave-to {
-  opacity: 0.1;
+  @apply opacity-10;
 }
-/* Custom scrollbar styles */
+
 .max-h-80 {
   scrollbar-width: thin;
   scrollbar-color: rgba(94, 234, 212, 0.3) rgba(30, 41, 59, 0.5);
 }
 
 .max-h-80::-webkit-scrollbar {
-  width: 8px;
+  @apply w-2;
 }
 
 .max-h-80::-webkit-scrollbar-track {
-  background: rgba(30, 41, 59, 0.5);
-  border-radius: 4px;
+  @apply bg-slate-800 bg-opacity-50 rounded;
 }
 
 .max-h-80::-webkit-scrollbar-thumb {
-  background-color: rgba(94, 234, 212, 0.3);
-  border-radius: 4px;
-  border: 2px solid rgba(30, 41, 59, 0.5);
+  @apply bg-teal-400 bg-opacity-30 rounded border-2 border-slate-800 border-opacity-50;
 }
 
 .max-h-80::-webkit-scrollbar-thumb:hover {
-  background-color: rgba(94, 234, 212, 0.5);
+  @apply bg-teal-400 bg-opacity-50;
 }
 
-.h-64 {
-  height: 16rem;
-}
-
-.object-cover {
-  object-fit: cover;
-}
-
-button:focus {
-  outline: none;
-  box-shadow: 0 0 0 3px rgba(66, 153, 225, 0.5);
-}
-.text-slate-300 {
-  white-space: pre-wrap;
-}
 .modal-open {
-  overflow: hidden !important;
+  @apply overflow-hidden;
 }
-.group:hover .group-hover\:opacity-100 {
-  opacity: 1;
+
+.swiper-button-prev,
+.swiper-button-next {
+  @apply text-white bg-black bg-opacity-50 w-12 h-12 rounded-full flex items-center justify-center transition-colors duration-300 ease-in-out z-10;
+}
+
+.swiper-button-prev:hover,
+.swiper-button-next:hover {
+  @apply bg-opacity-75;
+}
+
+.swiper-button-prev::after,
+.swiper-button-next::after {
+  @apply text-xl;
+}
+
+.swiper-button-prev {
+  @apply left-5;
+}
+
+.swiper-button-next {
+  @apply right-5;
 }
 </style>

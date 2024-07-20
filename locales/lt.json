@@ -113,7 +113,8 @@
     "about": "Detalus aprašymas",
     "technologies": "Panaudotos technologijos",
     "website": "Internetinė svetainė",
-    "close": "Uždaryti"
+    "close": "Uždaryti",
+    "imgCounter": "iš"
   },
   "contactForm": {
     "contact": "Susisiekti",

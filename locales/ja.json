@@ -113,7 +113,8 @@
     "about": "詳細説明",
     "technologies": "使用技術",
     "website": "ウェブサイト",
-    "close": "閉じる"
+    "close": "閉じる",
+    "imgCounter": "画像 {current} / {total}"
   },
   "contactForm": {
     "contact": "お問い合わせ",
