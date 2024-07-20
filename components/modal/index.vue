@@ -228,15 +228,15 @@
     <Transition name="fade">
       <div
         v-if="fullScreenImage"
-        class="fixed inset-0 z-[60] flex items-center justify-center bg-black bg-opacity-90 p-4"
+        class="fixed inset-0 z-[60] flex flex-col items-center justify-center bg-black bg-opacity-90 p-4"
         @click="closeFullScreenImage"
       >
-        <div class="relative max-w-[90vw] max-h-[90vh]">
+        <div class="relative max-w-[90vw] max-h-[80vh] mb-4">
           <img
             :src="fullScreenImage"
             alt="Full-screen Image"
             class="max-w-full max-h-full object-contain cursor-pointer"
-            @click.stop="closeFullScreenImage"
+            @click.stop
           />
           <button
             @click.stop="closeFullScreenImage"
@@ -244,6 +244,26 @@
           >
             &times;
           </button>
+        </div>
+
+        <!-- Thumbnail row for full-screen view -->
+        <div class="flex space-x-2 overflow-x-auto max-w-[90vw]">
+          <div
+            v-for="(image, index) in imageArray"
+            :key="index"
+            @click.stop="setFullScreenImage(image)"
+            class="relative cursor-pointer transition-all duration-300 hover:opacity-80 flex-shrink-0"
+          >
+            <img
+              :src="image"
+              :alt="`Thumbnail ${index + 1}`"
+              class="w-16 h-16 object-cover rounded"
+            />
+            <div
+              v-if="image === fullScreenImage"
+              class="absolute inset-0 bg-teal-500 bg-opacity-40 rounded"
+            ></div>
+          </div>
         </div>
       </div>
     </Transition>
@@ -301,6 +321,10 @@ const mainImage = ref(imageArray.value[0] || "");
 
 const setMainImage = (image) => {
   mainImage.value = image;
+};
+
+const setFullScreenImage = (image) => {
+  fullScreenImage.value = image;
 };
 
 const openFullScreenImage = (image) => {
