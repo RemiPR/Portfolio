@@ -47,9 +47,9 @@
       :title="project.title"
       :subtitle="project.company"
       :detailedDescription="project.detailedDescription || project.description"
-      :image="project.images || project.image"
+      :images="project.images"
       :technologies="project.skills"
-      :websiteUrl="typeof project.link === 'string' ? project.link : ''"
+      :websiteUrl="project.link"
       :githubUrl="project.github"
       @close="showModal = false"
     />

@@ -208,6 +208,9 @@ const projects = computed(() => {
     link: t(`projects.items.${i}.link`),
     github: t(`projects.items.${i}.github`),
     image: t(`projects.items.${i}.image`),
+    images: t(`projects.items.${i}.images`)
+      .split(",")
+      .map((skill) => skill.trim()),
     description: t(`projects.items.${i}.description`),
     detailedDescription: t(`projects.items.${i}.detailedDescription`),
     skills: t(`projects.items.${i}.skills`)
