@@ -236,7 +236,7 @@
             :src="fullScreenImage"
             alt="Full-screen Image"
             class="max-w-full max-h-full object-contain cursor-pointer"
-            @click.stop
+            @click="closeFullScreenImage"
           />
           <button
             @click.stop="closeFullScreenImage"
