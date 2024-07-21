@@ -29,7 +29,7 @@
             @click.stop
           >
             <div class="bg-slate-800 px-4 pt-5 pb-4 sm:p-6 sm:pb-4">
-              <div class="flex justify-between items-start mb-4">
+              <div class="flex justify-between items-start">
                 <h3
                   class="text-2xl leading-6 font-bold text-slate-200"
                   id="modal-title"
@@ -38,7 +38,7 @@
                 </h3>
                 <button
                   type="button"
-                  class="inline-flex justify-center rounded-md border border-transparent shadow-sm px-4 py-2 bg-teal-600 text-base font-medium text-white hover:bg-teal-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-teal-500 sm:ml-3 sm:w-auto sm:text-sm"
+                  class="inline-flex justify-center rounded-md border border-transparent shadow-sm px-4 py-2 bg-teal-600 text-base font-medium text-white hover:bg-teal-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-teal-500 sm:ml-3 sm:w-auto sm:text-sm select-none"
                   @click="closeModal"
                 >
                   {{ $t("modal.close") }}
@@ -72,7 +72,7 @@
                         <img
                           :src="image"
                           :alt="`Image ${index + 1}`"
-                          class="w-full h-96 object-contain rounded-lg cursor-pointer"
+                          class="w-full h-96 object-contain rounded-lg cursor-pointer select-none"
                           @click="openFullScreenImage(index)"
                         />
                       </SwiperSlide>
@@ -101,7 +101,7 @@
                   </div>
 
                   <!-- Image counter for main modal -->
-                  <div class="flex justify-center my-6">
+                  <div class="flex justify-center my-4">
                     <div
                       v-if="imageArray.length > 1"
                       class="bg-black bg-opacity-50 text-white px-3 py-1 rounded-full text-sm inline-block"
@@ -125,7 +125,7 @@
                       <img
                         :src="image"
                         :alt="`Thumbnail ${index + 1}`"
-                        class="w-20 h-20 object-cover rounded"
+                        class="w-20 h-20 object-cover rounded select-none"
                       />
                       <div
                         v-if="index === currentMainIndex"
@@ -583,7 +583,9 @@ const handleKeyDown = (event) => {
       goToNextFullScreenSlide();
     }
   } else {
-    if (event.key === "ArrowLeft") {
+    if (event.key === "Escape") {
+      closeModal();
+    } else if (event.key === "ArrowLeft") {
       goToPreviousMainSlide();
     } else if (event.key === "ArrowRight") {
       goToNextMainSlide();
