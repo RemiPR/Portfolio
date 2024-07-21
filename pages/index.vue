@@ -6,20 +6,34 @@
     <Transition name="fade" mode="out-in">
       <LoadingSpinner v-if="isLoading" key="loading" />
       <div v-else :key="languageKey">
+        <!-- Mobile layout -->
+        <div class="lg:hidden">
+          <NavigationMobile
+            @open-modal="openBurgerModal"
+            @language-changing="handleLanguageChange"
+          />
+          <NavigationMobileBurgerModal
+            :is-open="isBurgerModalOpen"
+            :nav-items="navItems"
+            @close="closeBurgerModal"
+            @language-changing="handleLanguageChange"
+          />
+        </div>
+
         <div
           class="mx-auto min-h-screen max-w-[1350px] px-6 py-12 font-sans md:px-12 md:py-20 lg:px-24 lg:py-0"
         >
           <div class="lg:flex lg:justify-between lg:gap-4">
-            <!-- Left column (fixed) -->
+            <!-- Left column (fixed) - visible only on desktop -->
             <header
-              class="lg:sticky lg:top-0 lg:flex lg:max-h-screen lg:w-[528px] lg:flex-col lg:py-24"
+              class="hidden lg:sticky lg:top-0 lg:flex lg:max-h-screen lg:w-[528px] lg:flex-col lg:py-24"
             >
-              <div class="h-[470px] mb-16 md:mb-24 lg:mb-36">
+              <div class="lg:h-[470px] mb-2 lg:mb-36 relative">
                 <h1
-                  class="text-4xl font-bold tracking-tight text-slate-200 sm:text-5xl"
+                  class="text-4xl font-bold tracking-tight text-slate-200 sm:text-4xl xl:text-5xl"
                   style="letter-spacing: -0.025em"
                 >
-                  <a href="/">{{ $t("name") }}</a>
+                  {{ $t("name") }}
                 </h1>
                 <h2
                   class="mt-3 text-lg font-medium tracking-tight text-slate-200 sm:text-xl"
@@ -27,29 +41,38 @@
                   {{ $t("jobTitle") }}
                 </h2>
                 <p class="mt-4 max-w-xs leading-normal">{{ $t("shortBio") }}</p>
-                <div class="mt-8 space-y-2">
-                  <LanguageToggler @language-changing="handleLanguageChange" />
+                <ContactSocialDesktop />
+                <div class="mt-4 space-y-2 overflow-visible">
+                  <div class="relative z-10">
+                    <LanguageToggler
+                      @language-changing="handleLanguageChange"
+                    />
+                  </div>
                 </div>
+
                 <!-- Navigation -->
                 <div class="mt-6">
-                  <Navigation :navItems="navItems" />
+                  <NavigationDesktop :navItems="navItems" />
                 </div>
               </div>
-              <ContactForm />
+
+              <div class="overflow-y-auto hover:overflow-y-auto flex-grow">
+                <ContactForm />
+              </div>
             </header>
 
             <!-- Right column (scrollable) -->
-            <main id="content" class="pt-24 lg:w-[528px] lg:py-24">
+            <main id="content" class="lg:w-[528px] lg:py-24 pt-12">
               <section
                 id="about"
                 class="mb-16 scroll-mt-16 md:mb-24 lg:mb-36 lg:scroll-mt-24"
                 aria-label="About me"
               >
                 <div
-                  class="sticky top-0 z-20 -mx-6 mb-4 w-screen bg-slate-900/75 px-6 py-5 backdrop-blur md:-mx-12 md:px-12 lg:sr-only lg:relative lg:top-auto lg:mx-auto lg:w-full lg:px-0 lg:py-0 lg:opacity-0"
+                  class="sticky top-0 z-20 -mx-6 mb-4 w-screen bg-slate-900/75 px-6 backdrop-blur md:-mx-12 md:px-12 lg:sr-only lg:relative lg:top-auto lg:mx-auto lg:w-full lg:px-0 lg:py-0 lg:opacity-0"
                 >
-                  <h2 class="text-2xl font-bold mb-4 text-slate-200">
-                    {{ $t("nav.about") }}
+                  <h2 class="text-2xl font-bold lg:mb-4 text-slate-200">
+                    {{ $t("about.title") }}
                   </h2>
                 </div>
                 <div>
@@ -146,12 +169,21 @@
 
 <script setup>
 import { useI18n } from "vue-i18n";
-import { computed, inject, ref } from "vue";
 
 const { t, locale } = useI18n();
 
 const isLoading = inject("isLoading", ref(false));
 const languageKey = computed(() => locale.value);
+
+const isBurgerModalOpen = ref(false);
+
+const openBurgerModal = () => {
+  isBurgerModalOpen.value = true;
+};
+
+const closeBurgerModal = () => {
+  isBurgerModalOpen.value = false;
+};
 
 // Navigation
 const navItems = computed(() => [

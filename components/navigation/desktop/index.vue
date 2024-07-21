@@ -1,7 +1,7 @@
-<!-- components/navigation/index.vue -->
+<!-- components/navigation/desktop/index.vue -->
 <template>
   <nav class="nav hidden lg:block" aria-label="In-page jump links">
-    <ul class="mt-16 w-max">
+    <ul class="mt-12 w-max">
       <li v-for="item in navItems" :key="item.id">
         <a
           :class="[

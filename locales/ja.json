@@ -2,12 +2,18 @@
   "name": "レミギユス・プリアルガウスキス",
   "jobTitle": "情報科学3年生",
   "shortBio": "モダンで魅力的、高速なウェブサイトを作成しています。",
+  "socialMedia": {
+    "mobileTitle": "You can find me on:",
+    "github": "私のGitHubプロフィール",
+    "linkedin": "LinkedInで私とつながる"
+  },
   "nav": {
     "about": "概要",
     "experience": "経験",
     "projects": "プロジェクト"
   },
   "about": {
+    "title": "私について",
     "paragraphs": {
       "0": "こんにちは！情報科学の3年生で、魅力的で高速なウェブアプリケーションの作成を学んでいます。",
       "1": "様々な技術を扱ってきましたが、現在はNuxt（Vueフレームワークの拡張）を使用したフルスタック開発に注力しています。",
@@ -124,6 +130,7 @@
     "submit": "送信",
     "submitSuccess": "メッセージが正常に送信されました！",
     "submitError": "エラーが発生しました。もう一度お試しください。",
+    "mobileTitle": "Or you can leave your message here:",
     "validation": {
       "name": {
         "required": "お名前を入力してください",

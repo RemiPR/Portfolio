@@ -2,12 +2,18 @@
   "name": "Remigijus Prialgauskis",
   "jobTitle": "Trečio kurso informatikos studentas",
   "shortBio": "Kuriu modernias, patrauklias bei greitas internetines svetaines.",
+  "socialMedia": {
+    "mobileTitle": "Mane galite rasti:",
+    "github": "Mano GitHub profilis",
+    "linkedin": "Susisiekti per LinkedIn"
+  },
   "nav": {
     "about": "APIE",
     "experience": "PATIRTIS",
     "projects": "PROJEKTAI"
   },
   "about": {
+    "title": "Apie mane",
     "paragraphs": {
       "0": "Sveiki! Esu trečio kurso informatikos studentas, mokinuosi kurti patrauklias bei greitas internetines aplikacijas.",
       "1": "Esu dirbęs su nemažai skirtingų technologijų, tačiau šiuo metu daugiausiai dėmesio skiriu full-stack kūrimui naudojant Nuxt(kuris yra Vue karkaso papildomas plėtinys).",
@@ -124,6 +130,7 @@
     "submit": "Siųsti",
     "submitSuccess": "Jūsų žinutė išsiųsta sėkmingai!",
     "submitError": "Įvyko klaida, bandykite dar kartą.",
+    "mobileTitle": "Arba palikite žinutę čia:",
     "validation": {
       "name": {
         "required": "Prašome įvesti savo vardą",

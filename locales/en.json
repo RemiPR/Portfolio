@@ -2,12 +2,18 @@
   "name": "Remigijus Prialgauskis",
   "jobTitle": "Third-year Computer Science Student",
   "shortBio": "I create modern, attractive, and fast websites.",
+  "socialMedia": {
+    "mobileTitle": "You can find me on:",
+    "github": "My GitHub profile",
+    "linkedin": "Connect on LinkedIn"
+  },
   "nav": {
     "about": "ABOUT",
     "experience": "EXPERIENCE",
     "projects": "PROJECTS"
   },
   "about": {
+    "title": "About me",
     "paragraphs": {
       "0": "Hello! I'm a third-year computer science student, learning to create attractive and fast web applications.",
       "1": "I've worked with various technologies, but currently, I'm focusing on full-stack development using Nuxt (an extension of the Vue framework).",
@@ -124,6 +130,7 @@
     "submit": "Send",
     "submitSuccess": "Your message has been sent successfully!",
     "submitError": "An error occurred, please try again.",
+    "mobileTitle": "Or you can leave your message here:",
     "validation": {
       "name": {
         "required": "Please enter your name",

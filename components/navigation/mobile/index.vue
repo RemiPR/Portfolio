@@ -1,0 +1,34 @@
+<!-- components/navigation/mobile/index.vue -->
+<template>
+  <nav class="fixed top-0 left-0 right-0 z-50 backdrop-blur-md bg-slate-900/80">
+    <div class="flex justify-between items-center p-4">
+      <LanguageToggler
+        @language-changing="$emit('language-changing', $event)"
+      />
+      <button
+        @click="$emit('open-modal')"
+        aria-label="Open menu"
+        class="text-slate-200 hover:text-teal-300"
+      >
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke="currentColor"
+          class="w-6 h-6"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+            d="M4 6h16M4 12h16M4 18h16"
+          />
+        </svg>
+      </button>
+    </div>
+  </nav>
+</template>
+
+<script setup>
+defineEmits(["open-modal", "language-changing"]);
+</script>

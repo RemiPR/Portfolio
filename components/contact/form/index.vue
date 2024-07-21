@@ -1,42 +1,56 @@
 <!-- components/contact/form/index.vue -->
 <template>
-  <div class="relative">
-    <button
-      @click="handleClick"
-      class="flex items-center text-2xl font-bold text-slate-200 hover:text-teal-300 transition-colors duration-300"
-    >
-      <span>{{ $t("contactForm.contact") }}</span>
-      <svg
-        ref="iconRef"
-        class="ml-2 w-8 h-8 transition-transform duration-300"
-        :class="{
-          'rotate-360': isFormVisible,
-          'animate-attention': showAttentionAnimation && !isFormVisible,
-        }"
-        viewBox="0 0 24 24"
-        fill="none"
-        stroke="currentColor"
-        stroke-width="2"
-        stroke-linecap="round"
-        stroke-linejoin="round"
+  <div class="flex flex-col">
+    <div v-if="!initiallyOpen" class="h-12">
+      <button
+        @click="handleClick"
+        class="flex items-center text-2xl font-bold text-slate-200 hover:text-teal-300 transition-colors duration-300"
       >
-        <path
-          d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"
-        />
-        <polyline points="22,6 12,13 2,6" />
-      </svg>
-    </button>
+        <span>{{ $t("contactForm.contact") }}</span>
+        <svg
+          ref="iconRef"
+          class="ml-2 w-8 h-8 transition-transform duration-300"
+          :class="{
+            'rotate-360': isFormVisible,
+            'animate-attention': showAttentionAnimation && !isFormVisible,
+          }"
+          viewBox="0 0 24 24"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="2"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+        >
+          <path
+            d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"
+          />
+          <polyline points="22,6 12,13 2,6" />
+        </svg>
+      </button>
+    </div>
+    <div v-else>
+      <h3 class="text-center text-lg font-semibold text-teal-100">
+        {{ $t("contactForm.mobileTitle") }}
+      </h3>
+    </div>
+
     <Transition name="expand">
       <form
-        v-if="isFormVisible"
+        v-if="isFormVisible || initiallyOpen"
         @submit.prevent="onSubmit"
-        class="absolute top-full left-0 mt-4 p-6 bg-slate-800 rounded-lg shadow-lg w-full max-w-md space-y-4"
+        class="mt-4 p-4 bg-slate-800 rounded-lg shadow-lg w-full space-y-4"
+        :class="{
+          'mt-2 mb-6 p-6': initiallyOpen,
+          'max-w-sm': !initiallyOpen,
+          'sm:max-w-md md:max-w-lg lg:max-w-xl xl:max-w-2xl': initiallyOpen,
+          'sm:p-6 md:p-8 lg:space-y-6': initiallyOpen,
+        }"
       >
         <div class="grid grid-cols-1 gap-4 sm:grid-cols-2">
           <div>
             <label
               for="from_name"
-              class="block text-sm font-medium text-slate-200"
+              class="block text-sm font-medium text-slate-200 mb-1 sm:mb-2"
             >
               {{ $t("contactForm.name") }}
             </label>
@@ -46,7 +60,10 @@
               id="from_name"
               type="text"
               class="mt-1 block w-full rounded-md bg-slate-700 border-slate-600 text-slate-200 focus:border-teal-500 focus:ring-teal-500 py-2 px-3 text-base"
-              :class="{ 'border-red-500': errors.from_name }"
+              :class="{
+                'border-red-500': errors.from_name,
+                'sm:py-3 sm:px-4 md:text-lg': initiallyOpen,
+              }"
             />
             <span class="text-red-500 text-xs mt-1">{{
               errors.from_name
@@ -55,7 +72,7 @@
           <div>
             <label
               for="from_email"
-              class="block text-sm font-medium text-slate-200"
+              class="block text-sm font-medium text-slate-200 mb-1 sm:mb-2"
             >
               {{ $t("contactForm.email") }}
             </label>
@@ -65,7 +82,10 @@
               id="from_email"
               type="email"
               class="mt-1 block w-full rounded-md bg-slate-700 border-slate-600 text-slate-200 focus:border-teal-500 focus:ring-teal-500 py-2 px-3 text-base"
-              :class="{ 'border-red-500': errors.from_email }"
+              :class="{
+                'border-red-500': errors.from_email,
+                'sm:py-3 sm:px-4 md:text-lg': initiallyOpen,
+              }"
             />
             <span class="text-red-500 text-xs mt-1">{{
               errors.from_email
@@ -73,16 +93,22 @@
           </div>
         </div>
         <div>
-          <label for="message" class="block text-sm font-medium text-slate-200">
+          <label
+            for="message"
+            class="block text-sm font-medium text-slate-200 mb-1 sm:mb-2"
+          >
             {{ $t("contactForm.message") }}
           </label>
           <textarea
             v-model="message"
             v-bind="messageAttrs"
             id="message"
-            rows="4"
+            :rows="initiallyOpen ? 6 : 4"
             class="mt-1 block w-full rounded-md bg-slate-700 border-slate-600 text-slate-200 focus:border-teal-500 focus:ring-teal-500 py-2 px-3 text-base"
-            :class="{ 'border-red-500': errors.message }"
+            :class="{
+              'border-red-500': errors.message,
+              'sm:py-3 sm:px-4 md:text-lg': initiallyOpen,
+            }"
           ></textarea>
           <span class="text-red-500 text-xs mt-1">{{ errors.message }}</span>
         </div>
@@ -90,6 +116,9 @@
           <button
             type="submit"
             class="py-2 px-6 border border-transparent shadow-sm text-base font-medium rounded-md text-slate-900 bg-teal-400 hover:bg-teal-300 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-teal-500 transition-colors duration-300 relative overflow-hidden"
+            :class="{
+              'w-full sm:w-auto sm:py-3 sm:px-8 md:text-lg': initiallyOpen,
+            }"
             :disabled="isSubmitting"
           >
             <span :class="{ 'opacity-0': isSubmitting }">
@@ -101,6 +130,7 @@
             >
               <svg
                 class="animate-spin h-5 w-5 text-slate-900"
+                :class="{ 'sm:h-6 sm:w-6': initiallyOpen }"
                 xmlns="http://www.w3.org/2000/svg"
                 fill="none"
                 viewBox="0 0 24 24"
@@ -182,7 +212,14 @@ import { useRuntimeConfig } from "#app";
 const { t } = useI18n();
 const config = useRuntimeConfig();
 
-const isFormVisible = ref(false);
+const props = defineProps({
+  initiallyOpen: {
+    type: Boolean,
+    default: false,
+  },
+});
+
+const isFormVisible = ref(props.initiallyOpen);
 const showAttentionAnimation = ref(true);
 const iconRef = ref(null);
 const isSubmitting = ref(false);
@@ -219,8 +256,10 @@ const [from_email, emailAttrs] = defineField("from_email");
 const [message, messageAttrs] = defineField("message");
 
 const handleClick = () => {
-  showAttentionAnimation.value = false;
-  isFormVisible.value = !isFormVisible.value;
+  if (!props.initiallyOpen) {
+    showAttentionAnimation.value = false;
+    isFormVisible.value = !isFormVisible.value;
+  }
 };
 
 const showNotification = (type, message) => {
