@@ -24,6 +24,18 @@
           class="mx-auto min-h-screen max-w-[1350px] px-6 py-12 font-sans md:px-12 md:py-20 lg:px-24 lg:py-0"
         >
           <div class="lg:flex lg:justify-between lg:gap-4">
+            <!-- Mobile header - visible only on mobile and tablet -->
+            <header class="lg:hidden py-6">
+              <h1 class="text-3xl font-bold tracking-tight text-slate-200">
+                {{ $t("name") }}
+              </h1>
+              <h2
+                class="mt-2 text-lg font-medium tracking-tight text-slate-200"
+              >
+                {{ $t("jobTitle") }}
+              </h2>
+            </header>
+
             <!-- Left column (fixed) - visible only on desktop -->
             <header
               class="hidden lg:sticky lg:top-0 lg:flex lg:max-h-screen lg:w-[528px] lg:flex-col lg:py-24"
@@ -62,7 +74,7 @@
             </header>
 
             <!-- Right column (scrollable) -->
-            <main id="content" class="lg:w-[528px] lg:py-24 pt-12">
+            <main id="content" class="lg:w-[528px] lg:py-24">
               <section
                 id="about"
                 class="mb-16 scroll-mt-16 md:mb-24 lg:mb-36 lg:scroll-mt-24"
