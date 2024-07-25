@@ -28,7 +28,7 @@ export default defineNuxtConfig({
           hid: "description",
           name: "description",
           content:
-            "Professional portfolio of [Your Name], showcasing web development projects and skills in [Your Key Technologies, e.g., Vue.js, Nuxt, JavaScript].",
+            "Professional portfolio of Remigijus Prialgauskis, showcasing web development projects and skills in [Your Key Technologies, e.g., Vue.js, Nuxt, JavaScript].",
         },
         { name: "format-detection", content: "telephone=no" },
       ],
