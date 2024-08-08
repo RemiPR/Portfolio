@@ -53,7 +53,7 @@
                   {{ $t("jobTitle") }}
                 </h2>
                 <p class="mt-4 max-w-xs leading-normal">{{ $t("shortBio") }}</p>
-                <ContactSocialDesktop />
+
                 <div class="mt-4 space-y-2 overflow-visible">
                   <div class="relative z-10">
                     <LanguageToggler
@@ -104,9 +104,13 @@
               >
                 <div>
                   <div class="flex justify-between items-center mb-4">
-                    <h2 class="text-2xl font-bold text-slate-200">
-                      {{ $t("experience.title") }}
-                    </h2>
+                    <div class="flex items-center space-x-4">
+                      <h2 class="text-2xl font-bold text-slate-200">
+                        {{ $t("experience.title") }}
+                      </h2>
+                      <ContactSocialDesktop />
+                    </div>
+
                     <a
                       :href="$t('experience.resumeUrl')"
                       download

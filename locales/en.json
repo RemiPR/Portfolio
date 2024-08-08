@@ -72,8 +72,8 @@
         "company": "3-month internship - Turiba University ",
         "link": "https://scrolle.me",
         "github": "https://github.com/RemiPR/Turiba-University-Erasmus-Project",
-        "image": "/student_bg.png",
-        "images": "/student_bg.png, /management_bg.png, /guest_bg.png, /guest_admission.png, /teacher_groups.png",
+        "image": "/student_bg.webp",
+        "images": "/student_bg.webp, /management_bg.webp, /guest_bg.webp, /guest_admission.webp, /teacher_groups.webp",
         "description": "Three students from KVK completed this internship. We were tasked with creating an LMS - Learning Management System, which would allow secure login for multiple types of users. I was responsible for team leadership, design, and front-end development. We created the design ourselves, and I personally developed most of the front-end.",
         "detailedDescription": "This ambitious project was developed by 3 students and one internship supervisor. The goal was to create a Learning Management System (LMS) that would be secure, user-friendly, and have core functionality similar to Moodle. This project aimed to address the contemporary issues of other learning management systems like Moodle, which are often overly complex, have too much unnecessary functionality, and aren't visually appealing. Due to the project's scope and time constraints, we created a minimal prototype, but the available time was used effectively, and we learned many new things during this period. The backend is currently disabled, so authorization doesn't work. All pages can be accessed directly by entering one of the desired user types in the URL: e.g., https://scrolle.me/guest, /student, /teacher, /management. P.S. Dark mode and language selection only work on some pages.",
         "skills": "Figma,Tailwind CSS,Nuxt,Node.js,MongoDB"
@@ -83,8 +83,8 @@
         "company": "UAB Jung Vilnius",
         "link": "https://www.jung.de/lt/",
         "github": "https://github.com/H1X4Dev/KVK-Agile",
-        "image": "/app_1.png",
-        "images": "/app_1.png, /app_2.png, /app_3.png",
+        "image": "/app_1.webp",
+        "images": "/app_1.webp, /app_2.webp, /app_3.webp",
         "description": "This mobile app was developed by 5 students using Agile methodology. I was responsible for Scrum master duties, as well as the design and front-end of the mobile application.",
         "detailedDescription": "We used Kotlin through Android Studio to create this app. We adhered to the best programming practices learned during our studies (SOLID principles). The app's purpose was to help users choose a smart home system based on a completed questionnaire and direct them to relevant suppliers who could install these desired services.",
         "skills": "Android Studio,Kotlin,Trello,Agile,Confluence"
@@ -94,8 +94,8 @@
         "company": "KVK coursework",
         "link": "",
         "github": "",
-        "image": "/assessment_system_3.png",
-        "images": "/assessment_system_3.png, /assessment_system_1.png, /assessment_system_2.png",
+        "image": "/assessment_system_3.webp",
+        "images": "/assessment_system_3.webp, /assessment_system_1.webp, /assessment_system_2.webp",
         "description": "I developed this coursework independently, experimenting with the Nuxt framework and Tailwind CSS for the first time, while using Node.js for the back-end. I created a web application for an achievement assessment system where users can log in as teachers to perform CRUD operations on created tests, which can then be taken by users logged in as students.",
         "detailedDescription": "In this assessment system, tests from the database are displayed, which can be created/modified/deleted by logged-in teachers. There's also a filtering functionality that allows sorting tests by groups, number of questions, time limit, etc.",
         "skills": "Nuxt,Tailwind CSS,Node.js,MongoDB"
@@ -105,8 +105,8 @@
         "company": "KVK project work",
         "link": "",
         "github": "",
-        "image": "/job_portal_1.png",
-        "images": "/job_portal_1.png, /job_portal_2.png, /job_portal_3.png",
+        "image": "/job_portal_1.webp",
+        "images": "/job_portal_1.webp, /job_portal_2.webp, /job_portal_3.webp",
         "description": "I developed this project with two colleagues, using the MERN architecture for the first time. A scientific paper about this project was presented at the KVK technology conference, which you can find by clicking on the link that will be visible when you click on this project card.",
         "detailedDescription": "",
         "skills": "React,Tailwind CSS,Node.js,MongoDB"
