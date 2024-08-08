@@ -75,7 +75,8 @@
                         :key="index"
                         class="flex items-center justify-center"
                       >
-                        <img
+                        <NuxtImg
+                          loading="lazy"
                           :src="image"
                           :alt="`Image ${index + 1}`"
                           class="w-full h-96 object-contain rounded-lg cursor-pointer select-none mt-4"
@@ -128,7 +129,8 @@
                       @click="goToMainSlide(index)"
                       class="relative cursor-pointer transition-all duration-300 hover:opacity-80 flex-shrink-0"
                     >
-                      <img
+                      <NuxtImg
+                        loading="lazy"
                         :src="image"
                         :alt="`Thumbnail ${index + 1}`"
                         class="w-20 h-20 object-cover rounded select-none"
@@ -301,7 +303,8 @@
               class="flex items-center justify-center"
             >
               <div class="w-full h-full flex items-center justify-center">
-                <img
+                <NuxtImg
+                  loading="lazy"
                   :src="image"
                   :alt="`Full-screen Image ${index + 1}`"
                   class="max-w-full max-h-full w-auto h-auto object-contain cursor-pointer select-none"
@@ -358,7 +361,8 @@
             @click.stop="goToFullScreenSlide(index)"
             class="relative cursor-pointer transition-all duration-300 hover:opacity-80 flex-shrink-0"
           >
-            <img
+            <NuxtImg
+              loading="lazy"
               :src="image"
               :alt="`Thumbnail ${index + 1}`"
               class="w-16 h-16 object-cover rounded"
