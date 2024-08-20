@@ -83,8 +83,8 @@
                           @click="openFullScreenImage(index)"
                         />
                       </SwiperSlide>
-                      <div class="swiper-button-prev" @click.stop></div>
-                      <div class="swiper-button-next" @click.stop></div>
+                      <div class="swiper-button-prev z-50" @click.stop></div>
+                      <div class="swiper-button-next z-50" @click.stop></div>
                     </Swiper>
 
                     <div
@@ -148,7 +148,7 @@
                   </h4>
 
                   <div
-                    class="text-slate-300 mb-4 leading-relaxed max-h-80 overflow-y-auto pr-2"
+                    class="text-slate-300 mb-4 leading-relaxed max-h-80 overflow-y-auto pr-2 whitespace-pre-wrap"
                     ref="aboutSection"
                     v-html="processedDetailedDescription"
                   ></div>
