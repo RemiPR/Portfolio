@@ -9,7 +9,7 @@
       aria-label="GitHub"
     >
       <svg
-        class="h-6 w-6 text-teal-300 hover:text-teal-500"
+        class="h-6 w-6 text-teal-300 hover:text-teal-500 transform scale-110"
         fill="currentColor"
         viewBox="0 0 24 24"
       >
