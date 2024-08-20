@@ -3,9 +3,7 @@
   "jobTitle": "Third-year Computer Science Student",
   "shortBio": "I create modern, attractive, and fast websites.",
   "socialMedia": {
-    "mobileTitle": "You can find me on:",
-    "github": "My GitHub profile",
-    "linkedin": "Connect on LinkedIn"
+    "mobileTitle": "You can find me on:"
   },
   "nav": {
     "about": "ABOUT",
@@ -35,11 +33,11 @@
       "0": {
         "period": "2022 — PRESENT",
         "title": "Computer Science Student",
-        "company": "KVK - Klaipėda State University of Applied Sciences",
+        "company": "KVK - Klaipėda State College",
         "link": "https://www.ku.lt/cris/entities/publication/6b727b31-a23f-4013-89a3-39f2ab7cb25c",
-        "description": "Throughout my studies, I've worked with numerous technologies, ranging from website development to mobile app creation using Android Studio, and even game development using Godot Engine.",
-        "detailedDescription": "First year:\nI created two websites, one using HTML, CSS (Bootstrap), and JavaScript, and another using PHP and Tailwind CSS. Additionally, I collaborated with two classmates to develop a 3D Tetris game using Unity.\n\nSecond year:\nWorking with two classmates, we developed a job board website using the MERN stack architecture. A scientific paper was written about this project and presented at the KVK technology conference. You can view this paper by clicking the link below.\nMy next project in the second year was my coursework, where I first experimented with the Nuxt framework and Tailwind CSS, using Node.js for the back-end. I created a web application for an achievement assessment system, where users can log in as teachers to perform CRUD operations on created tests, which can then be taken by users logged in as students.\nAnother significant project in the second year was developing a mobile application for a client from Vilnius using Android Studio. In a team of 5 students, we had 2 months to create a mobile app that would help users choose a smart home system based on a completed questionnaire and direct them to relevant suppliers who could install these desired services. We used Agile methodology throughout the development process. I was responsible for the Scrum master duties, as well as the design and front-end of the mobile application.\n\nThird year:\nThe academic year hasn't started yet.",
-        "skills": "Figma,HTML,CSS, Bootstrap, Tailwind CSS,JavaScript,TypeScript,React,Vue,Nuxt,PHP,Java,Android Studio,Unity,Godot engine,Trello,Agile",
+        "description": "During my studies, I worked with a variety of technologies, from creating websites and mobile applications using Android Studio to developing games using Godot Engine.",
+        "detailedDescription": "First Year:\nI created two websites, one using HTML, CSS (Bootstrap), and JavaScript, and the other using PHP and Tailwind CSS. Additionally, together with two classmates, we developed a 3D Tetris game using Unity.\n\nSecond Year:\nTogether with two classmates, we created a website where users could view and post job advertisements, using the MERN technology stack. A scientific article was written for this project, and it was presented at the KVK Technology Conference. You can view this article by clicking on the link below.\n\nThe next project I worked on during the second year was my course project, where I tried the Nuxt framework with Tailwind CSS for the first time, and Node.js was used for the backend. I created a web application for an achievement evaluation system, where you can log in as a lecturer and perform CRUD operations on the tests created, which can be completed by logging in as a student.\n\nAnother important project in the second year was a mobile application created for a client from Vilnius using Android Studio. In a team of 5 students, we had to develop a mobile application within 2 months that would help users choose a smart home system based on a filled-out questionnaire and direct them to the appropriate suppliers who could install these desired services. Throughout the development, the Agile work methodology was used, and I was responsible for the role of Scrum Master and for the design and frontend of the mobile application.\n\nThird Year:\nCurrently studying.",
+        "skills": "Figma, HTML, CSS, Bootstrap, Tailwind CSS, JavaScript, TypeScript, React, Vue, Nuxt, PHP, Java, Android Studio, Unity, Godot engine, Trello, Agile",
         "github": ""
       },
       "1": {
@@ -48,7 +46,7 @@
         "company": "Turiba University",
         "link": "https://scrolle.me",
         "description": "Three students from KVK completed this internship. We were tasked with creating a prototype of an LMS - Learning Management System, which would allow secure login for 5 different types of users. I was responsible for team leadership, project planning, design, and front-end development. We created the design ourselves, and I personally developed most of the front-end.",
-        "detailedDescription": "Due to the project's scope, requirements, and time constraints, we created a minimal prototype, so a large part of the functionality wasn't completed. However, the available time was used effectively, and we learned many new things during this period. More details are provided in the projects section below.",
+        "detailedDescription": "Due to the project's scope, requirements, and time constraints, we created a minimal prototype, so a large part of the functionality wasn't completed. However, the available time was used effectively, and we learned many new things during this period.\n\nMore details are provided in the projects section below.",
         "skills": "Figma,Tailwind CSS,Nuxt,Node.js,MongoDB",
         "github": "https://github.com/RemiPR/Turiba-University-Erasmus-Project"
       },
@@ -75,7 +73,7 @@
         "image": "/student_bg.webp",
         "images": "/student_bg.webp, /management_bg.webp, /guest_bg.webp, /guest_admission.webp, /teacher_groups.webp",
         "description": "Three students from KVK completed this internship. We were tasked with creating an LMS - Learning Management System, which would allow secure login for multiple types of users. I was responsible for team leadership, design, and front-end development. We created the design ourselves, and I personally developed most of the front-end.",
-        "detailedDescription": "This ambitious project was developed by 3 students and one internship supervisor. The goal was to create a Learning Management System (LMS) that would be secure, user-friendly, and have core functionality similar to Moodle. This project aimed to address the contemporary issues of other learning management systems like Moodle, which are often overly complex, have too much unnecessary functionality, and aren't visually appealing. Due to the project's scope and time constraints, we created a minimal prototype, but the available time was used effectively, and we learned many new things during this period. The backend is currently disabled, so authorization doesn't work. All pages can be accessed directly by entering one of the desired user types in the URL: e.g., https://scrolle.me/guest, /student, /teacher, /management. P.S. Dark mode and language selection only work on some pages.",
+        "detailedDescription": "This ambitious project was developed by 3 students and one internship supervisor. The goal was to create a Learning Management System (LMS) that would be secure, user-friendly, and have core functionality similar to Moodle. This project aimed to address the contemporary issues of other learning management systems like Moodle, which are often overly complex, have too much unnecessary functionality, and aren't visually appealing.\n\nDue to the project's scope and time constraints, we created a minimal prototype, but the available time was used effectively, and we learned many new things during this period. The backend is currently disabled, so authorization doesn't work. All pages can be accessed directly by entering one of the desired user types in the URL: e.g., https://turiba-university-erasmus-project-remi-projects.vercel.app/guest, /student, /teacher, /management.\n\nP.S. Dark mode and language selection only work on some pages.",
         "skills": "Figma,Tailwind CSS,Nuxt,Node.js,MongoDB"
       },
       "1": {
@@ -86,7 +84,7 @@
         "image": "/app_1.webp",
         "images": "/app_1.webp, /app_2.webp, /app_3.webp",
         "description": "This mobile app was developed by 5 students using Agile methodology. I was responsible for Scrum master duties, as well as the design and front-end of the mobile application.",
-        "detailedDescription": "We used Kotlin through Android Studio to create this app. We adhered to the best programming practices learned during our studies (SOLID principles). The app's purpose was to help users choose a smart home system based on a completed questionnaire and direct them to relevant suppliers who could install these desired services.",
+        "detailedDescription": "We used Kotlin through Android Studio to create this app. We adhered to the best programming practices learned during our studies (SOLID principles).\nThe app's purpose was to help users choose a smart home system based on a completed questionnaire and direct them to relevant suppliers who could install these desired services.",
         "skills": "Android Studio,Kotlin,Trello,Agile,Confluence"
       },
       "2": {
@@ -110,6 +108,17 @@
         "description": "I developed this project with two colleagues, using the MERN architecture for the first time. A scientific paper about this project was presented at the KVK technology conference, which you can find by clicking on the link that will be visible when you click on this project card.",
         "detailedDescription": "",
         "skills": "React,Tailwind CSS,Node.js,MongoDB"
+      },
+      "4": {
+        "title": "Auto Service AutoKorega",
+        "company": "AutoKorega",
+        "link": "https://autokorega.lt/",
+        "github": "",
+        "image": "/autokorega_1.webp",
+        "images": "/autokorega_1.webp, /autokorega_2.webp, /autokorega_3.webp",
+        "description": "This project was created by three first-year students for a client from Klaipėda. We designed the idea in Figma, made the client's requested changes, and developed a website using the WordPress Elementor builder plugin based on this design. This website provides information about the auto service's offered services and contact details.",
+        "detailedDescription": "This project was created by three first-year students for a client from Klaipėda. We designed the idea in Figma, made the client's requested changes, and developed a website using the WordPress Elementor builder plugin based on this design.\n\nThe website provides information about the auto service's offered services and contact details.\n\nI was responsible for the team leader role, ensuring that the entire team completed their tasks with quality.",
+        "skills": "WordPress, Elementor builder, HTML, CSS, JavaScript, Figma"
       }
     }
   },

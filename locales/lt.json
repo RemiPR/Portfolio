@@ -3,9 +3,7 @@
   "jobTitle": "Trečio kurso informatikos studentas",
   "shortBio": "Kuriu modernias, patrauklias bei greitas internetines svetaines.",
   "socialMedia": {
-    "mobileTitle": "Mane galite rasti:",
-    "github": "Mano GitHub profilis",
-    "linkedin": "Susisiekti per LinkedIn"
+    "mobileTitle": "Mane galite rasti:"
   },
   "nav": {
     "about": "APIE",
@@ -38,7 +36,7 @@
         "company": "KVK - Klaipėdos Valstybinė Kolegija",
         "link": "https://www.ku.lt/cris/entities/publication/6b727b31-a23f-4013-89a3-39f2ab7cb25c",
         "description": "Studijų metu dirbau su daugybę skirtingų technologijų, nuo internetinių svetainių, mobilių aplikacijų kūrimo naudojant Android Studio, iki žaidimų kūrimo naudojant Godot Engine.",
-        "detailedDescription": "Pirmas kursas:\nSukūriau dvi internetines svetaines, vieną naudojant HTML, CSS(Bootstrap) ir JavaScript, kitą naudojant PHP ir Tailwind CSS. Taip pat su 2 grupiokais bendromis jėgomis sukūrėmę žaidimą 3d Tetris naudojant Unity.\n\nAntras kursas:\nSu 2 grupiokais sukūrėmę internetinę svetainę, kurioje buvo galima peržiūrėti bei talpinti darbo skelbimus, kūrimui naudojome MERN technologijų architektūrą. Šiam projektui buvo parašytas mokslinis straipsnis ir jis buvo pristatytas KVK technologijų konferencijoje. Šį straipsnį galite pamatyti paspaudus ant žemiau esančios internetinės svetainės nuorodos.\nSekantis projektas kurį dariau antrame kurse buvo mano kursinis darbas, kuriame pirmą kartą išbandžiau Nuxt karkasą su Tailwind CSS, o serverinei pusei(back-end) buvo naudota Node.js. Sukūriau pasiekimų vertinimo sistemos internetinę aplikaciją, kurioje galima prisijungti kaip dėstytotojui, prisijungus, atlikti CRUD sukurtiems testams, kuriuos galima atlikinėti prisijungus kaip vartotojas studentas.\nDar vienas iš svarbesnių projektų atliktų antrame kurse užsakovui iš Vilniaus buvo sukurta mobili aplikacija su Android Studio. 5 studentų komandoje per 2 mėnesius reikėjo sukurti mobilią aplikaciją, kuri padėtų vartotojams išsirinkti išmaniųjų namų sistemą pagal užpildytą klausimyną ir nukreiptų juos pas reikiamus tiekėjus, kurie galėtų įdiegti šias norimas paslaugas. Viso programavimo metu buvo naudojama Agile darbo metodika, aš buvau atsakingas už Scrum vadovo pareigas bei atsakingas už dizainą ir mobilios aplikacijos klientinę pusę(front-end).\n\nTrečias kursas:\nKursas dar neprasidėjo.",
+        "detailedDescription": "Pirmas kursas:\nSukūriau dvi internetines svetaines, vieną naudojant HTML, CSS(Bootstrap) ir JavaScript, kitą naudojant PHP ir Tailwind CSS. Taip pat su 2 grupiokais bendromis jėgomis sukūrėmę žaidimą 3d Tetris naudojant Unity.\n\nAntras kursas:\nSu 2 grupiokais sukūrėmę internetinę svetainę, kurioje buvo galima peržiūrėti bei talpinti darbo skelbimus, kūrimui naudojome MERN technologijų architektūrą. Šiam projektui buvo parašytas mokslinis straipsnis ir jis buvo pristatytas KVK technologijų konferencijoje. Šį straipsnį galite pamatyti paspaudus ant žemiau esančios internetinės svetainės nuorodos.\n\nSekantis projektas kurį dariau antrame kurse buvo mano kursinis darbas, kuriame pirmą kartą išbandžiau Nuxt karkasą su Tailwind CSS, o serverinei pusei(back-end) buvo naudota Node.js. Sukūriau pasiekimų vertinimo sistemos internetinę aplikaciją, kurioje galima prisijungti kaip dėstytotojui, prisijungus, atlikti CRUD sukurtiems testams, kuriuos galima atlikinėti prisijungus kaip vartotojas studentas.\n\nDar vienas iš svarbesnių projektų atliktų antrame kurse užsakovui iš Vilniaus buvo sukurta mobili aplikacija su Android Studio. 5 studentų komandoje per 2 mėnesius reikėjo sukurti mobilią aplikaciją, kuri padėtų vartotojams išsirinkti išmaniųjų namų sistemą pagal užpildytą klausimyną ir nukreiptų juos pas reikiamus tiekėjus, kurie galėtų įdiegti šias norimas paslaugas. Viso programavimo metu buvo naudojama Agile darbo metodika, aš buvau atsakingas už Scrum vadovo pareigas bei atsakingas už dizainą ir mobilios aplikacijos klientinę pusę(front-end).\n\nTrečias kursas:\nStudijuojama.",
         "skills": "Figma,HTML,CSS, Bootstrap, Tailwind CSS,JavaScript,TypeScript,React,Vue,Nuxt,PHP,Java,Android Studio,Unity,Godot engine,Trello,Agile",
         "github": ""
       },
@@ -46,9 +44,9 @@
         "period": "GEG — LIEP 2024",
         "title": "3 mėnesių praktika Latvijoje",
         "company": "Turiba University",
-        "link": "https://scrolle.me",
+        "link": "https://turiba-university-erasmus-project-remi-projects.vercel.app",
         "description": "Praktiką atlikome 3 studentai iš KVK, reikėjo sukurti LMS - mokymosi valdymo sistemos prototipą, kuriame būtų galima saugiai prisijungti 5 skirtingų tipų vartotojams. Buvau atsakingas už komandos vadovo pareigas, projektavimą ir dizainą su klientine puse(front-end). Dizainą kūrėme patys,  didžiąją dalį klientinės pusės sukūriau vienas.",
-        "detailedDescription": "Dėl šio projekto dydžio, reikalavimų bei laiko trūkumo, buvo sukurtas minimalus prototipas, todėl didelė dalis funkcionalumo nebuvo užbaigta, tačiau turimas laikas buvo efektyviai išnaudotas ir jo metu buvo išmokta daug naujų dalykų. Plačiau aprašyta žemiau esančiame projektai skyriuje.",
+        "detailedDescription": "Dėl šio projekto dydžio, reikalavimų bei laiko trūkumo, buvo sukurtas minimalus prototipas, todėl didelė dalis funkcionalumo nebuvo užbaigta, tačiau turimas laikas buvo efektyviai išnaudotas ir jo metu buvo išmokta daug naujų dalykų.\n\nPlačiau aprašyta žemiau esančiame projektai skyriuje.",
         "skills": "Figma,Tailwind CSS,Nuxt,Node.js,MongoDB",
         "github": "https://github.com/RemiPR/Turiba-University-Erasmus-Project"
       },
@@ -70,12 +68,12 @@
       "0": {
         "title": "LMS - Learning Management System",
         "company": "3 mėn praktika - Turiba University ",
-        "link": "https://scrolle.me",
+        "link": "https://turiba-university-erasmus-project-remi-projects.vercel.app",
         "github": "https://github.com/RemiPR/Turiba-University-Erasmus-Project",
         "image": "/student_bg.webp",
         "images": "/student_bg.webp, /management_bg.webp, /guest_bg.webp, /guest_admission.webp, /teacher_groups.webp",
         "description": "Praktiką atlikome 3 studentai iš KVK, reikėjo sukurti LMS - mokymosi valdymo sistemą, kurioje būtų galima saugiai prisijungti daugumai skirtingų tipų vartotojams. Buvau atsakingas už komandos vadovo pareigas ir dizainą su klientine puse(front-end). Dizainą kūrėme patys,  didžiąją dalį klientinės pusės sukūriau vienas.",
-        "detailedDescription": "Šis ambicingas projektas buvo kuriamas 3 studentų ir vieno praktikos vadovo. Tikslas buvo sukurti mokymosi valdymo sistemą(LMS), kuri būtų saugi, patogi naudoti ir turėtų pagrindinį funkcionalumą kaip Moodle. Šis projektas buvo kuriamas siekiant išspręsti šiuolaikines kitų mokymosi valdymo sistemų problemas, tokių kaip Moodle, kurios yra pernelyg sudėtingos naudoti, turi per daug nereikalingo funkcionalumo ir tiesiog neatrodo labai patraukliai. Dėl projekto dydžio ir laiko trūkumo, buvo sukurtas minimalus prototipas, tačiau turimas laikas buvo efektyviai išnaudotas ir jo metu buvo išmokta daug naujų dalykų. Backend dalis yra išjungta, todėl autorizacija neveikia, visus puslapius galima pasiekti tiesiogiai įvedus į URL vieną iš norimų vartotojų tipų: pvz.: https://scrolle.me/guest, /student, /teacher, /management. P.S. tamsos rėžimas ir kalbų pasirinkimas veikia tik ant kai kurių puslapių.",
+        "detailedDescription": "Šis ambicingas projektas buvo kuriamas 3 studentų ir vieno praktikos vadovo. Tikslas buvo sukurti mokymosi valdymo sistemą(LMS), kuri būtų saugi, patogi naudoti ir turėtų pagrindinį funkcionalumą kaip Moodle. Šis projektas buvo kuriamas siekiant išspręsti šiuolaikines kitų mokymosi valdymo sistemų problemas, tokių kaip Moodle, kurios yra pernelyg sudėtingos naudoti, turi per daug nereikalingo funkcionalumo ir tiesiog neatrodo labai patraukliai.\n\nDėl projekto dydžio ir laiko trūkumo, buvo sukurtas minimalus prototipas, tačiau turimas laikas buvo efektyviai išnaudotas ir jo metu buvo išmokta daug naujų dalykų. Backend dalis yra išjungta, todėl autorizacija neveikia, visus puslapius galima pasiekti tiesiogiai įvedus į URL vieną iš norimų vartotojų tipų: pvz.: \nhttps://turiba-university-erasmus-project-remi-projects.vercel.app/guest, /student, /teacher, /management. \n\nP.S. tamsos rėžimas ir kalbų pasirinkimas veikia tik ant kai kurių puslapių.",
         "skills": "Figma,Tailwind CSS,Nuxt,Node.js,MongoDB"
       },
       "1": {
@@ -86,7 +84,7 @@
         "image": "/app_1.webp",
         "images": "/app_1.webp, /app_2.webp, /app_3.webp",
         "description": "Ši mobili programėlė buvo kuriama 5 studentų naudojant Agile metodologiją. Aš buvau atsakingas už Scrum vadovo pareigas bei dizainą ir mobilios aplikacijos klientinę pusę(front-end). ",
-        "detailedDescription": "Šiai programėlei sukurti buvo naudojama Kotlin per Android Studio. Buvo laikomasi geriausių programavimo praktikų, kurių mokėmės studijų metu(SOLID principai). \nProgramėlės tikslas buvo padėti vartotojams išsirinkti išmaniųjų namų sistemą pagal užpildytą klausimyną ir nukreipti juos pas reikiamus tiekėjus, kurie galėtų įdiegti šias norimas paslaugas.",
+        "detailedDescription": "Šiai programėlei sukurti buvo naudojama Kotlin per Android Studio. Buvo laikomasi geriausių programavimo praktikų, kurių mokėmės studijų metu(SOLID principai).\nProgramėlės tikslas buvo padėti vartotojams išsirinkti išmaniųjų namų sistemą pagal užpildytą klausimyną ir nukreipti juos pas reikiamus tiekėjus, kurie galėtų įdiegti šias norimas paslaugas.",
         "skills": "Android Studio,Kotlin,Trello,Agile,Confluence"
       },
       "2": {
@@ -96,7 +94,7 @@
         "github": "",
         "image": "/assessment_system_3.webp",
         "images": "/assessment_system_3.webp, /assessment_system_1.webp, /assessment_system_2.webp",
-        "description": "Šį kursinį darbą dariau vienas, pirmą kartą išbandžiau Nuxt karkasą su Tailwind CSS, serverinei pusei(back-end) buvo naudota Node.js. Sukūriau pasiekimų vertinimo sistemos internetinę aplikaciją, kurioje galima prisijungti kaip dėstytotojui, prisijungus, atlikti CRUD sukurtiems testams, kuriuos galima atlikinėti prisijungus kaip vartotojas studentas.",
+        "description": "Šį kursinį darbą kūriau vienas, pirmą kartą išbandžiau Nuxt karkasą su Tailwind CSS, serverinei pusei(back-end) buvo naudota Node.js. Sukūriau pasiekimų vertinimo sistemos internetinę aplikaciją, kurioje galima prisijungti kaip dėstytotojui, prisijungus, atlikti CRUD sukurtiems testams, kuriuos galima atlikinėti prisijungus kaip vartotojas studentas.",
         "detailedDescription": "Šioje vertinimo sistemoje, yra atvaizduojami testai iš duomenų bazės, kuriuos gali kurti/keisti/trinti prisijungęs dėstytojas. Taip pat yra sukurtas filtravimo funkcionalumas, kuris leidžia atsirūšiuoti testus pagal grupes, klausimų kiekį, laiko limitą ir t.t.",
         "skills": "Nuxt,Tailwind CSS,Node.js,MongoDB"
       },
@@ -107,9 +105,20 @@
         "github": "",
         "image": "/job_portal_1.webp",
         "images": "/job_portal_1.webp, /job_portal_2.webp, /job_portal_3.webp",
-        "description": "Šį projektinį darbą kūriau su 2 kolegomis, pirmą kartą naudojome MERN architektūrą. Šis projekto mokslinis straipsnis buvo pristatytas KVK technologijų konferencijoje, kurį galite rasti paspaudę ant nuorodos, kuri bus matoma paspaudus ant šios projekto kortelės.",
+        "description": "Šį projektinį darbą kūriau su 2 bendrakursiais, pirmą kartą naudojome MERN architektūrą. Šio projekto mokslinis straipsnis buvo pristatytas KVK technologijų konferencijoje, kuris yra patalptinas žemiau esančioje nuorodoje.",
         "detailedDescription": "",
         "skills": "React,Tailwind CSS,Node.js,MongoDB"
+      },
+      "4": {
+        "title": "Autoservisas AutoKorega",
+        "company": "AutoKorega",
+        "link": "https://autokorega.lt/",
+        "github": "",
+        "image": "/autokorega_1.webp",
+        "images": "/autokorega_1.webp, /autokorega_2.webp, /autokorega_3.webp",
+        "description": "Šis projektas buvo sukurtas 3 pirmakursių studentų užsakovui iš Klaipėdos. Nuo idėjos sukūrėmę dizainą figmoje, atlikome norimus kliento pakeitimus ir pagal šį dizainą sukūrėme internetinę svetainę naudojant WordPress Elementor builder įskiepį. Šioje svetainėje galima rasti informaciją apie autoserviso teikiamas paslaugas bei jų kontaktus.",
+        "detailedDescription": "Šis projektas buvo sukurtas 3 pirmakursių studentų užsakovui iš Klaipėdos. Nuo idėjos sukūrėmę dizainą figmoje, atlikome norimus kliento pakeitimus ir pagal šį dizainą sukūrėme internetinę svetainę naudojant WordPress Elementor builder įskiepį.\n\nŠioje svetainėje galima rasti informaciją apie autoserviso teikiamas paslaugas bei jų kontaktus.\n\nBuvau atsakingas už komandos vadovo pareigas, užtikrinant, kad visa komanda atliktų savo užduotis kokybiškai.",
+        "skills": "WordPress, Elementor builder, HTML, CSS, JavaScript, Figma"
       }
     }
   },

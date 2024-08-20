@@ -3,9 +3,7 @@
   "jobTitle": "情報科学3年生",
   "shortBio": "モダンで魅力的、高速なウェブサイトを作成しています。",
   "socialMedia": {
-    "mobileTitle": "You can find me on:",
-    "github": "私のGitHubプロフィール",
-    "linkedin": "LinkedInで私とつながる"
+    "mobileTitle": "You can find me on:"
   },
   "nav": {
     "about": "概要",
@@ -110,6 +108,17 @@
         "description": "このプロジェクトは2人の同僚と開発し、初めてMERNアーキテクチャを使用しました。このプロジェクトに関する科学論文がKVK技術会議で発表されました。このプロジェクトカードをクリックすると表示されるリンクをクリックすると、その論文を見つけることができます。",
         "detailedDescription": "",
         "skills": "React,Tailwind CSS,Node.js,MongoDB"
+      },
+      "4": {
+        "title": "自動車サービス AutoKorega",
+        "company": "AutoKorega",
+        "link": "https://autokorega.lt/",
+        "github": "",
+        "image": "/autokorega_1.webp",
+        "images": "/autokorega_1.webp, /autokorega_2.webp, /autokorega_3.webp",
+        "description": "このプロジェクトは、クライペダのクライアントのために3人の1年生の学生によって作成されました。私たちはFigmaでアイデアをデザインし、クライアントの要望に応じた変更を行い、このデザインに基づいてWordPress Elementorビルダープラグインを使用してウェブサイトを開発しました。このウェブサイトでは、自動車サービスが提供するサービスと連絡先情報を確認できます。",
+        "detailedDescription": "このプロジェクトは、クライペダのクライアントのために3人の1年生の学生によって作成されました。私たちはFigmaでアイデアをデザインし、クライアントの要望に応じた変更を行い、このデザインに基づいてWordPress Elementorビルダープラグインを使用してウェブサイトを開発しました。\n\nこのウェブサイトでは、自動車サービスが提供するサービスと連絡先情報を確認できます。\n\n私はチームリーダーの役割を担当し、チーム全体が質の高い仕事を遂行できるようにしました。",
+        "skills": "WordPress, Elementorビルダー, HTML, CSS, JavaScript, Figma"
       }
     }
   },
