@@ -55,7 +55,10 @@
               <div class="sm:flex sm:items-start">
                 <div class="mt-3 text-center sm:mt-0 sm:text-left w-full">
                   <!-- Main Image Swiper -->
-                  <div v-if="imageArray.length" class="mb-4 relative group">
+                  <div
+                    v-if="imageArray.length"
+                    class="mb-4 relative border-2 border-blue-400"
+                  >
                     <Swiper
                       :modules="[SwiperNavigation]"
                       :slides-per-view="1"
@@ -64,7 +67,7 @@
                         nextEl: '.swiper-button-next',
                         prevEl: '.swiper-button-prev',
                       }"
-                      :loop="true"
+                      :loop="false"
                       :speed="850"
                       @swiper="setMainSwiper"
                       @slideChange="handleMainSlideChange"
@@ -73,7 +76,7 @@
                       <SwiperSlide
                         v-for="(image, index) in imageArray"
                         :key="index"
-                        class="flex items-center justify-center"
+                        class="relative group flex items-center justify-center"
                       >
                         <NuxtImg
                           loading="lazy"
@@ -82,29 +85,28 @@
                           class="w-full h-96 object-contain rounded-lg cursor-pointer select-none mt-4"
                           @click="openFullScreenImage(index)"
                         />
+                        <div
+                          class="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none border-2 border-red-400"
+                        >
+                          <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            class="h-12 w-12 text-slate-300"
+                            fill="none"
+                            viewBox="0 0 24 24"
+                            stroke="currentColor"
+                          >
+                            <path
+                              stroke-linecap="round"
+                              stroke-linejoin="round"
+                              stroke-width="2"
+                              d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0zM10 7v3m0 0v3m0-3h3m-3 0H7"
+                            />
+                          </svg>
+                        </div>
                       </SwiperSlide>
                       <div class="swiper-button-prev z-50" @click.stop></div>
                       <div class="swiper-button-next z-50" @click.stop></div>
                     </Swiper>
-
-                    <div
-                      class="z-50 absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none"
-                    >
-                      <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        class="h-12 w-12 text-slate-300"
-                        fill="none"
-                        viewBox="0 0 24 24"
-                        stroke="currentColor"
-                      >
-                        <path
-                          stroke-linecap="round"
-                          stroke-linejoin="round"
-                          stroke-width="2"
-                          d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0zM10 7v3m0 0v3m0-3h3m-3 0H7"
-                        />
-                      </svg>
-                    </div>
                   </div>
 
                   <!-- Image counter for main modal -->
@@ -130,6 +132,7 @@
                       class="relative cursor-pointer transition-all duration-300 hover:opacity-80 flex-shrink-0"
                     >
                       <NuxtImg
+                        placeholder
                         loading="lazy"
                         :src="image"
                         :alt="`Thumbnail ${index + 1}`"
@@ -290,7 +293,7 @@
               nextEl: '.swiper-button-next',
               prevEl: '.swiper-button-prev',
             }"
-            :loop="true"
+            :loop="false"
             :speed="850"
             :initial-slide="currentFullScreenIndex"
             @swiper="setFullScreenSwiper"
@@ -304,6 +307,7 @@
             >
               <div class="w-full h-full flex items-center justify-center">
                 <NuxtImg
+                  placeholder
                   loading="lazy"
                   :src="image"
                   :alt="`Full-screen Image ${index + 1}`"
@@ -362,6 +366,7 @@
             class="relative cursor-pointer transition-all duration-300 hover:opacity-80 flex-shrink-0"
           >
             <NuxtImg
+              placeholder
               loading="lazy"
               :src="image"
               :alt="`Thumbnail ${index + 1}`"
@@ -543,6 +548,8 @@ const enableBodyScroll = () => {
 
 const closeModal = () => {
   emit("close");
+  currentMainIndex.value = 0;
+  currentFullScreenIndex.value = 0;
 };
 
 watch(
@@ -670,11 +677,11 @@ const handleKeyDown = (event) => {
   @apply text-xl;
 }
 
-.swiper-button-prev {
+/* .swiper-button-prev {
   @apply left-5;
 }
 
 .swiper-button-next {
   @apply right-5;
-}
+} */
 </style>
