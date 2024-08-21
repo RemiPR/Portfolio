@@ -25,7 +25,7 @@
           >
 
           <div
-            class="fixed inset-0 sm:static sm:inset-auto inline-block align-bottom bg-slate-800 sm:rounded-lg text-left overflow-hidden shadow-xl transform transition-all sm:my-8 sm:align-middle sm:max-w-4xl sm:w-full h-full sm:h-auto sm:max-h-[90vh] overflow-y-auto"
+            class="fixed inset-0 sm:static sm:inset-auto inline-block align-bottom bg-slate-800 sm:rounded-lg text-left overflow-hidden shadow-xl transform transition-all sm:my-8 sm:align-middle sm:max-w-4xl lg:max-w-5xl sm:w-full h-full sm:h-auto sm:max-h-[90vh] overflow-y-auto"
             @click.stop
           >
             <div class="bg-slate-800 px-4 pt-5 pb-4 sm:p-6 sm:pb-4">
@@ -54,11 +54,7 @@
 
               <div class="sm:flex sm:items-start">
                 <div class="mt-3 text-center sm:mt-0 sm:text-left w-full">
-                  <!-- Main Image Swiper -->
-                  <div
-                    v-if="imageArray.length"
-                    class="mb-4 relative border-2 border-blue-400"
-                  >
+                  <div v-if="imageArray.length" class="mb-4 relative">
                     <Swiper
                       :modules="[SwiperNavigation]"
                       :slides-per-view="1"
@@ -76,32 +72,36 @@
                       <SwiperSlide
                         v-for="(image, index) in imageArray"
                         :key="index"
-                        class="relative group flex items-center justify-center"
+                        class="relative flex items-center justify-center"
                       >
-                        <NuxtImg
-                          loading="lazy"
-                          :src="image"
-                          :alt="`Image ${index + 1}`"
-                          class="w-full h-96 object-contain rounded-lg cursor-pointer select-none mt-4"
-                          @click="openFullScreenImage(index)"
-                        />
                         <div
-                          class="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none border-2 border-red-400"
+                          class="relative group max-w-[800px] mx-auto h-96 mt-4"
                         >
-                          <svg
-                            xmlns="http://www.w3.org/2000/svg"
-                            class="h-12 w-12 text-slate-300"
-                            fill="none"
-                            viewBox="0 0 24 24"
-                            stroke="currentColor"
+                          <NuxtImg
+                            loading="lazy"
+                            :src="image"
+                            :alt="`Image ${index + 1}`"
+                            class="w-full h-96 object-contain rounded-lg cursor-pointer select-none"
+                            @click="openFullScreenImage(index)"
+                          />
+                          <div
+                            class="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none"
                           >
-                            <path
-                              stroke-linecap="round"
-                              stroke-linejoin="round"
-                              stroke-width="2"
-                              d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0zM10 7v3m0 0v3m0-3h3m-3 0H7"
-                            />
-                          </svg>
+                            <svg
+                              xmlns="http://www.w3.org/2000/svg"
+                              class="h-12 w-12 text-slate-300"
+                              fill="none"
+                              viewBox="0 0 24 24"
+                              stroke="currentColor"
+                            >
+                              <path
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                                stroke-width="2"
+                                d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0zM10 7v3m0 0v3m0-3h3m-3 0H7"
+                              />
+                            </svg>
+                          </div>
                         </div>
                       </SwiperSlide>
                       <div class="swiper-button-prev z-50" @click.stop></div>
