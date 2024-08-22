@@ -54,6 +54,7 @@
 
               <div class="sm:flex sm:items-start">
                 <div class="mt-3 text-center sm:mt-0 sm:text-left w-full">
+                  <!-- Main modal swiper -->
                   <div v-if="imageArray.length" class="mb-4 relative">
                     <Swiper
                       :modules="[SwiperNavigation]"
@@ -294,7 +295,7 @@
               prevEl: '.swiper-button-prev',
             }"
             :loop="false"
-            :speed="850"
+            :speed="1000"
             :initial-slide="currentFullScreenIndex"
             @swiper="setFullScreenSwiper"
             @slideChange="handleFullScreenSlideChange"
@@ -311,7 +312,7 @@
                   loading="lazy"
                   :src="image"
                   :alt="`Full-screen Image ${index + 1}`"
-                  class="max-w-full max-h-full w-auto h-auto object-contain cursor-pointer select-none"
+                  class="max-w-7xl max-h-full min-w-full w-auto h-auto object-contain cursor-pointer select-none"
                   @click.stop="closeFullScreenImage"
                   @load="() => imageLoaded(index)"
                 />
@@ -352,7 +353,11 @@
           v-if="fullScreenImage"
           class="mt-4 mb-2 bg-black bg-opacity-50 text-white px-3 py-1 rounded-full text-sm"
         >
-          {{ fullScreenSwiperInstance ? currentFullScreenIndex + 1 : 1 }}
+          {{
+            fullScreenSwiperInstance
+              ? fullScreenSwiperInstance.activeIndex + 1
+              : 1
+          }}
           {{ $t("modal.imgCounter") }}
           {{ imageArray.length }}
         </div>
@@ -452,6 +457,7 @@ const setMainSwiper = (swiper) => {
 
 const setFullScreenSwiper = (swiper) => {
   fullScreenSwiperInstance.value = swiper;
+  swiper.slideTo(currentFullScreenIndex.value, 0, false);
 };
 
 const handleMainSlideChange = () => {
@@ -462,7 +468,10 @@ const handleMainSlideChange = () => {
 
 const handleFullScreenSlideChange = () => {
   if (fullScreenSwiperInstance.value) {
-    currentFullScreenIndex.value = fullScreenSwiperInstance.value.realIndex;
+    const newIndex = fullScreenSwiperInstance.value.activeIndex;
+    if (newIndex !== currentFullScreenIndex.value) {
+      currentFullScreenIndex.value = newIndex;
+    }
   }
 };
 
@@ -502,23 +511,50 @@ const goToMainSlide = (index) => {
   }
 };
 
+const debouncedGoToPreviousFullScreenSlide = useDebounce(() => {
+  if (
+    fullScreenSwiperInstance.value &&
+    fullScreenSwiperInstance.value.activeIndex > 0
+  ) {
+    fullScreenSwiperInstance.value.slidePrev();
+  }
+}, 50);
+
+const debouncedGoToNextFullScreenSlide = useDebounce(() => {
+  if (
+    fullScreenSwiperInstance.value &&
+    fullScreenSwiperInstance.value.activeIndex <
+      fullScreenSwiperInstance.value.slides.length - 1
+  ) {
+    fullScreenSwiperInstance.value.slideNext();
+  }
+}, 50);
+
 const goToFullScreenSlide = (index) => {
   if (fullScreenSwiperInstance.value) {
-    fullScreenSwiperInstance.value.slideToLoop(index);
+    fullScreenSwiperInstance.value.slideTo(index);
   }
 };
 
 const goToPreviousFullScreenSlide = () => {
-  if (fullScreenSwiperInstance.value) {
+  if (
+    fullScreenSwiperInstance.value &&
+    fullScreenSwiperInstance.value.activeIndex > 0
+  ) {
     fullScreenSwiperInstance.value.slidePrev();
   }
 };
 
 const goToNextFullScreenSlide = () => {
-  if (fullScreenSwiperInstance.value) {
+  if (
+    fullScreenSwiperInstance.value &&
+    fullScreenSwiperInstance.value.activeIndex <
+      fullScreenSwiperInstance.value.slides.length - 1
+  ) {
     fullScreenSwiperInstance.value.slideNext();
   }
 };
+
 const goToPreviousMainSlide = () => {
   if (mainSwiperInstance.value) {
     mainSwiperInstance.value.slidePrev();
@@ -530,6 +566,7 @@ const goToNextMainSlide = () => {
     mainSwiperInstance.value.slideNext();
   }
 };
+
 const disableBodyScroll = () => {
   if (process.client) {
     const scrollbarWidth =
@@ -548,6 +585,14 @@ const enableBodyScroll = () => {
 
 const closeModal = () => {
   emit("close");
+  if (mainSwiperInstance.value) {
+    mainSwiperInstance.value.destroy(true, true);
+    mainSwiperInstance.value = null;
+  }
+  if (fullScreenSwiperInstance.value) {
+    fullScreenSwiperInstance.value.destroy(true, true);
+    fullScreenSwiperInstance.value = null;
+  }
   currentMainIndex.value = 0;
   currentFullScreenIndex.value = 0;
 };
@@ -595,9 +640,9 @@ const handleKeyDown = (event) => {
     if (event.key === "Escape") {
       closeFullScreenImage();
     } else if (event.key === "ArrowLeft") {
-      goToPreviousFullScreenSlide();
+      debouncedGoToPreviousFullScreenSlide();
     } else if (event.key === "ArrowRight") {
-      goToNextFullScreenSlide();
+      debouncedGoToNextFullScreenSlide();
     }
   } else {
     if (event.key === "Escape") {
@@ -676,12 +721,4 @@ const handleKeyDown = (event) => {
 .swiper-button-next::after {
   @apply text-xl;
 }
-
-/* .swiper-button-prev {
-  @apply left-5;
-}
-
-.swiper-button-next {
-  @apply right-5;
-} */
 </style>

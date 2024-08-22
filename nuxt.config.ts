@@ -7,7 +7,8 @@ export default defineNuxtConfig({
     "@vee-validate/nuxt",
     "vue3-carousel-nuxt",
     "nuxt-swiper",
-    "@nuxt/image"
+    "@nuxt/image",
+    "nuxt-lodash",
   ],
   css: ["@/assets/css/inter.css"],
   googleFonts: {

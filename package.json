@@ -22,5 +22,8 @@
     "vue": "latest",
     "vue3-carousel-nuxt": "^1.1.2",
     "yup": "^1.4.0"
+  },
+  "devDependencies": {
+    "nuxt-lodash": "^2.5.3"
   }
 }
