@@ -116,9 +116,9 @@
         "github": "",
         "image": "/autokorega_1.webp",
         "images": "/autokorega_1.webp, /autokorega_2.webp, /autokorega_3.webp",
-        "description": "Šis projektas buvo sukurtas 3 pirmakursių studentų užsakovui iš Klaipėdos. Nuo idėjos sukūrėmę dizainą figmoje, atlikome norimus kliento pakeitimus ir pagal šį dizainą sukūrėme internetinę svetainę naudojant WordPress Elementor builder įskiepį. Šioje svetainėje galima rasti informaciją apie autoserviso teikiamas paslaugas bei jų kontaktus.",
-        "detailedDescription": "Šis projektas buvo sukurtas 3 pirmakursių studentų užsakovui iš Klaipėdos. Nuo idėjos sukūrėmę dizainą figmoje, atlikome norimus kliento pakeitimus ir pagal šį dizainą sukūrėme internetinę svetainę naudojant WordPress Elementor builder įskiepį.\n\nŠioje svetainėje galima rasti informaciją apie autoserviso teikiamas paslaugas bei jų kontaktus.\n\nBuvau atsakingas už komandos vadovo pareigas, užtikrinant, kad visa komanda atliktų savo užduotis kokybiškai.",
-        "skills": "WordPress, Elementor builder, HTML, CSS, JavaScript, Figma"
+        "description": "Šis projektas buvo sukurtas 3 pirmakursių studentų užsakovui iš Klaipėdos. Nuo idėjos sukūrėmę dizainą figmoje, atlikome norimus kliento pakeitimus ir pagal šį dizainą sukūrėme internetinę svetainę naudojant WordPress SeedProd builder įskiepį. Šioje svetainėje galima rasti informaciją apie autoserviso teikiamas paslaugas bei jų kontaktus.",
+        "detailedDescription": "Šis projektas buvo sukurtas 3 pirmakursių studentų užsakovui iš Klaipėdos. Nuo idėjos sukūrėmę dizainą figmoje, atlikome norimus kliento pakeitimus ir pagal šį dizainą sukūrėme internetinę svetainę naudojant WordPress SeedProd builder įskiepį.\n\nŠioje svetainėje galima rasti informaciją apie autoserviso teikiamas paslaugas bei jų kontaktus.\n\nBuvau atsakingas už komandos vadovo pareigas, užtikrinant, kad visa komanda atliktų savo užduotis kokybiškai.",
+        "skills": "WordPress, SeedProd builder, HTML, CSS, JavaScript, Figma"
       }
     }
   },

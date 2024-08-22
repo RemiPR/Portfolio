@@ -116,9 +116,9 @@
         "github": "",
         "image": "/autokorega_1.webp",
         "images": "/autokorega_1.webp, /autokorega_2.webp, /autokorega_3.webp",
-        "description": "This project was created by three first-year students for a client from Klaipėda. We designed the idea in Figma, made the client's requested changes, and developed a website using the WordPress Elementor builder plugin based on this design. This website provides information about the auto service's offered services and contact details.",
-        "detailedDescription": "This project was created by three first-year students for a client from Klaipėda. We designed the idea in Figma, made the client's requested changes, and developed a website using the WordPress Elementor builder plugin based on this design.\n\nThe website provides information about the auto service's offered services and contact details.\n\nI was responsible for the team leader role, ensuring that the entire team completed their tasks with quality.",
-        "skills": "WordPress, Elementor builder, HTML, CSS, JavaScript, Figma"
+        "description": "This project was created by three first-year students for a client from Klaipėda. We designed the idea in Figma, made the client's requested changes, and developed a website using the WordPress SeedProd builder plugin based on this design. This website provides information about the auto service's offered services and contact details.",
+        "detailedDescription": "This project was created by three first-year students for a client from Klaipėda. We designed the idea in Figma, made the client's requested changes, and developed a website using the WordPress SeedProd builder plugin based on this design.\n\nThe website provides information about the auto service's offered services and contact details.\n\nI was responsible for the team leader role, ensuring that the entire team completed their tasks with quality.",
+        "skills": "WordPress, SeedProd builder, HTML, CSS, JavaScript, Figma"
       }
     }
   },
