@@ -81,13 +81,36 @@
                 aria-label="About me"
               >
                 <div
-                  class="sticky top-0 z-20 -mx-6 mb-4 w-screen bg-slate-900/75 px-6 backdrop-blur md:-mx-12 md:px-12 lg:sr-only lg:relative lg:top-auto lg:mx-auto lg:w-full lg:px-0 lg:py-0 lg:opacity-0"
+                  class="sticky top-0 z-20 -mx-6 mb-4 w-screen bg-slate-900/75 px-6 backdrop-blur md:-mx-12 md:px-12 lg:relative lg:top-auto lg:mx-auto lg:w-full lg:px-0 lg:py-0 lg:opacity-100"
                 >
-                  <h2 class="text-2xl font-bold lg:mb-4 text-slate-200">
-                    {{ $t("about.title") }}
-                  </h2>
+                  <button
+                    @click="toggleContent"
+                    class="flex items-center justify-between w-full text-left lg:cursor-default"
+                    :aria-expanded="isContentVisible"
+                  >
+                    <h2
+                      class="text-2xl font-bold lg:mb-4 text-slate-200 lg:hidden"
+                    >
+                      {{ $t("about.title") }}
+                    </h2>
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      class="h-6 w-6 transform transition-transform duration-200 lg:hidden"
+                      :class="{ 'rotate-180': isContentVisible }"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      stroke="currentColor"
+                    >
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                        d="M19 9l-7 7-7-7"
+                      />
+                    </svg>
+                  </button>
                 </div>
-                <div>
+                <div v-show="isContentVisible" class="lg:block">
                   <p
                     class="mb-4"
                     v-for="(paragraph, index) in styledAboutParagraphs"
@@ -96,6 +119,7 @@
                   ></p>
                 </div>
               </section>
+
               <!-- Experience section -->
               <section
                 id="experience"
@@ -192,6 +216,14 @@ const isLoading = inject("isLoading", ref(false));
 const languageKey = computed(() => locale.value);
 
 const isBurgerModalOpen = ref(false);
+
+const isContentVisible = ref(true);
+
+const toggleContent = () => {
+  if (window.innerWidth < 1024) {
+    isContentVisible.value = !isContentVisible.value;
+  }
+};
 
 const openBurgerModal = () => {
   isBurgerModalOpen.value = true;

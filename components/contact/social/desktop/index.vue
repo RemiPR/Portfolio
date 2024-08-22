@@ -1,6 +1,6 @@
 <!-- components/contact/social/desktop/index.vue -->
 <template>
-  <div class="flex space-x-4 w-max">
+  <div class="lg:flex space-x-4 w-max hidden">
     <NuxtLink
       to="https://github.com/RemiPR"
       target="_blank"
