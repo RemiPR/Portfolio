@@ -33,7 +33,7 @@
                 class="flex flex-col items-center min-[425px]:flex-row min-[425px]:justify-between min-[425px]:items-start"
               >
                 <div
-                  class="order-2 min-[425px]:order-1 mt-3 min-[425px]:mt-0 text-center min-[425px]:text-left"
+                  class="order-2 min-[425px]:order-1 mt-3 min-[425px]:mt-0 min-[425px]:text-left"
                 >
                   <h3
                     class="text-2xl leading-6 font-bold text-slate-200"
@@ -53,7 +53,7 @@
               </div>
 
               <div class="sm:flex sm:items-start">
-                <div class="mt-3 text-center sm:mt-0 sm:text-left w-full">
+                <div class="mt-3 sm:mt-0 sm:text-left w-full">
                   <!-- Main modal swiper -->
                   <div v-if="imageArray.length" class="mb-4 relative">
                     <Swiper
@@ -134,7 +134,6 @@
                     >
                       <NuxtImg
                         placeholder
-                        loading="lazy"
                         :src="image"
                         :alt="`Thumbnail ${index + 1}`"
                         class="w-20 h-20 object-cover rounded select-none"
