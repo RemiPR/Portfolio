@@ -79,6 +79,7 @@
                           class="relative group max-w-[800px] mx-auto h-auto sm:h-96 mt-4"
                         >
                           <NuxtImg
+                            placeholder
                             loading="lazy"
                             :src="image"
                             :alt="`Image ${index + 1}`"
