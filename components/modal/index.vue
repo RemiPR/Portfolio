@@ -287,13 +287,14 @@
           class="relative w-full h-auto sm:h-[calc(100vh-240px)] flex items-center justify-center"
         >
           <Swiper
-            :modules="[SwiperNavigation]"
+            :modules="[SwiperNavigation, SwiperZoom]"
             :slides-per-view="1"
             :space-between="30"
             :navigation="{
               nextEl: '.swiper-button-next',
               prevEl: '.swiper-button-prev',
             }"
+            :zoom="true"
             :loop="false"
             :speed="1000"
             :initial-slide="currentFullScreenIndex"
@@ -306,14 +307,16 @@
               :key="index"
               class="flex items-center justify-center"
             >
-              <div class="w-full h-full flex items-center justify-center">
+              <div
+                class="swiper-zoom-container w-full h-full flex items-center justify-center"
+              >
                 <NuxtImg
                   placeholder
                   loading="lazy"
                   :src="image"
                   :alt="`Full-screen Image ${index + 1}`"
                   class="max-w-7xl max-h-full min-w-full w-auto sm:h-auto object-contain cursor-pointer select-none"
-                  @click.stop="closeFullScreenImage"
+                  @click.stop="handleImageClick"
                   @load="() => imageLoaded(index)"
                 />
                 <div
@@ -344,8 +347,8 @@
               </div>
             </SwiperSlide>
           </Swiper>
-          <div class="swiper-button-prev" @click.stop></div>
-          <div class="swiper-button-next" @click.stop></div>
+          <div class="swiper-button-prev hidden sm:flex" @click.stop></div>
+          <div class="swiper-button-next hidden sm:flex" @click.stop></div>
         </div>
 
         <!-- Image counter for full-screen modal -->
@@ -395,7 +398,7 @@
 import { ref, computed, watch, onMounted, onUnmounted, nextTick } from "vue";
 import { useTextDivider } from "@/composables/useTextDivider.js";
 import { Swiper, SwiperSlide } from "swiper/vue";
-import { Navigation } from "swiper/modules";
+import { Navigation, Zoom } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/navigation";
 
@@ -429,6 +432,7 @@ const aboutSection = ref(null);
 const fullScreenImage = ref(null);
 const imageLoadedIndex = ref([]);
 const fullScreenModal = ref(null);
+const isZoomed = ref(false);
 
 // Main modal swiper
 const mainSwiperInstance = ref(null);
@@ -458,8 +462,21 @@ const setMainSwiper = (swiper) => {
 const setFullScreenSwiper = (swiper) => {
   fullScreenSwiperInstance.value = swiper;
   swiper.slideTo(currentFullScreenIndex.value, 0, false);
-};
 
+  // Add zoom change event listener
+  swiper.on("zoomChange", (swiper, scale) => {
+    isZoomed.value = scale !== 1;
+  });
+};
+const handleImageClick = (event) => {
+  event.stopPropagation();
+  if (isZoomed.value) {
+    fullScreenSwiperInstance.value.zoom.out();
+    isZoomed.value = false;
+  } else {
+    closeFullScreenImage();
+  }
+};
 const handleMainSlideChange = () => {
   if (mainSwiperInstance.value) {
     currentMainIndex.value = mainSwiperInstance.value.realIndex;
@@ -503,6 +520,7 @@ const closeFullScreenImage = () => {
     mainSwiperInstance.value.slideTo(currentFullScreenIndex.value, 0);
   }
   currentMainIndex.value = currentFullScreenIndex.value;
+  isZoomed.value = false;
 };
 
 const goToMainSlide = (index) => {
@@ -638,10 +656,15 @@ onUnmounted(() => {
 const handleKeyDown = (event) => {
   if (fullScreenImage.value) {
     if (event.key === "Escape") {
-      closeFullScreenImage();
-    } else if (event.key === "ArrowLeft") {
+      if (isZoomed.value) {
+        fullScreenSwiperInstance.value.zoom.out();
+        isZoomed.value = false;
+      } else {
+        closeFullScreenImage();
+      }
+    } else if (event.key === "ArrowLeft" && !isZoomed.value) {
       debouncedGoToPreviousFullScreenSlide();
-    } else if (event.key === "ArrowRight") {
+    } else if (event.key === "ArrowRight" && !isZoomed.value) {
       debouncedGoToNextFullScreenSlide();
     }
   } else {
@@ -720,5 +743,19 @@ const handleKeyDown = (event) => {
 .swiper-button-prev::after,
 .swiper-button-next::after {
   @apply text-xl;
+}
+@media (max-width: 640px) {
+  .swiper-button-prev,
+  .swiper-button-next {
+    display: none !important;
+  }
+}
+
+.swiper-zoom-container {
+  cursor: zoom-in;
+}
+
+.swiper-zoom-container.swiper-zoom-container-zoomed {
+  cursor: grab;
 }
 </style>
