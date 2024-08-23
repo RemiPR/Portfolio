@@ -68,7 +68,7 @@
                       :speed="850"
                       @swiper="setMainSwiper"
                       @slideChange="handleMainSlideChange"
-                      class="w-full h-96"
+                      class="w-full h-auto sm:h-96"
                     >
                       <SwiperSlide
                         v-for="(image, index) in imageArray"
@@ -76,13 +76,13 @@
                         class="relative flex items-center justify-center"
                       >
                         <div
-                          class="relative group max-w-[800px] mx-auto h-96 mt-4"
+                          class="relative group max-w-[800px] mx-auto h-auto sm:h-96 mt-4"
                         >
                           <NuxtImg
                             loading="lazy"
                             :src="image"
                             :alt="`Image ${index + 1}`"
-                            class="w-full h-96 object-contain rounded-lg cursor-pointer select-none"
+                            class="w-full h-auto sm:h-96 object-contain rounded-lg cursor-pointer select-none"
                             @click="openFullScreenImage(index)"
                           />
                           <div
@@ -124,7 +124,7 @@
                   <!-- Thumbnail Images for main modal -->
                   <div
                     v-if="imageArray.length > 1"
-                    class="flex justify-center space-x-2 mb-4 overflow-x-auto"
+                    class="sm:flex hidden justify-center space-x-2 mb-4 overflow-x-auto"
                   >
                     <div
                       v-for="(image, index) in imageArray"
@@ -283,7 +283,7 @@
         ref="fullScreenModal"
       >
         <div
-          class="relative w-full h-[calc(100vh-240px)] flex items-center justify-center"
+          class="relative w-full h-auto sm:h-[calc(100vh-240px)] flex items-center justify-center"
         >
           <Swiper
             :modules="[SwiperNavigation]"
@@ -298,7 +298,7 @@
             :initial-slide="currentFullScreenIndex"
             @swiper="setFullScreenSwiper"
             @slideChange="handleFullScreenSlideChange"
-            class="w-full h-full"
+            class="w-full h-auto sm:h-full"
           >
             <SwiperSlide
               v-for="(image, index) in imageArray"
@@ -311,7 +311,7 @@
                   loading="lazy"
                   :src="image"
                   :alt="`Full-screen Image ${index + 1}`"
-                  class="max-w-7xl max-h-full min-w-full w-auto h-auto object-contain cursor-pointer select-none"
+                  class="max-w-7xl max-h-full min-w-full w-auto sm:h-auto object-contain cursor-pointer select-none"
                   @click.stop="closeFullScreenImage"
                   @load="() => imageLoaded(index)"
                 />
@@ -362,7 +362,7 @@
         </div>
 
         <!-- Thumbnail row for full-screen view -->
-        <div class="flex space-x-4 mt-2 justify-center">
+        <div class="hidden sm:flex space-x-4 mt-2 justify-center">
           <div
             v-for="(image, index) in imageArray"
             :key="index"
