@@ -63,6 +63,7 @@ useSeoMeta({
     height: 630,
     alt: "Open Graph Image",
   },
+  ogType: "website",
 });
 
 const isLoading = ref(true);
