@@ -20,27 +20,6 @@ export default defineNuxtConfig({
     preconnect: true,
     preload: true,
   },
-  app: {
-    head: {
-      titleTemplate: "%s",
-      meta: [
-        { charset: "utf-8" },
-        { name: "viewport", content: "width=device-width, initial-scale=1" },
-        {
-          hid: "description",
-          name: "description",
-          content:
-            "Professional portfolio of Remigijus Prialgauskis, showcasing web development projects and skills in [Your Key Technologies, e.g., Vue.js, Nuxt, JavaScript].",
-        },
-        { name: "format-detection", content: "telephone=no" },
-      ],
-      link: [
-        { rel: "preconnect", href: "https://rsms.me/" },
-        { rel: "stylesheet", href: "https://rsms.me/inter/inter.css" },
-        { rel: "icon", type: "image/x-icon", href: "/favicon.svg" },
-      ],
-    },
-  },
   runtimeConfig: {
     public: {
       emailjsServiceId: process.env.EMAILJS_SERVICE_ID,

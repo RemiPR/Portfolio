@@ -70,8 +70,8 @@
         "company": "3 mėn praktika - Turiba University ",
         "link": "https://turiba-university-erasmus-project-remi-projects.vercel.app",
         "github": "https://github.com/RemiPR/Turiba-University-Erasmus-Project",
-        "image": "/student_bg.webp",
-        "images": "/student_bg.webp, /management_bg.webp, /guest_bg.webp, /guest_admission.webp, /teacher_groups.webp",
+        "image": "/student-bg.webp",
+        "images": "/student-bg.webp, /management-bg.webp, /guest-bg.webp, /guest-admission.webp, /teacher-groups.webp",
         "description": "Praktiką atlikome 3 studentai iš KVK, reikėjo sukurti LMS - mokymosi valdymo sistemą, kurioje būtų galima saugiai prisijungti daugumai skirtingų tipų vartotojams. Buvau atsakingas už komandos vadovo pareigas ir dizainą su klientine puse(front-end). Dizainą kūrėme patys,  didžiąją dalį klientinės pusės sukūriau vienas.",
         "detailedDescription": "Šis ambicingas projektas buvo kuriamas 3 studentų ir vieno praktikos vadovo. Tikslas buvo sukurti mokymosi valdymo sistemą(LMS), kuri būtų saugi, patogi naudoti ir turėtų pagrindinį funkcionalumą kaip Moodle. Šis projektas buvo kuriamas siekiant išspręsti šiuolaikines kitų mokymosi valdymo sistemų problemas, tokių kaip Moodle, kurios yra pernelyg sudėtingos naudoti, turi per daug nereikalingo funkcionalumo ir tiesiog neatrodo labai patraukliai.\n\nDėl projekto dydžio ir laiko trūkumo, buvo sukurtas minimalus prototipas, tačiau turimas laikas buvo efektyviai išnaudotas ir jo metu buvo išmokta daug naujų dalykų. Backend dalis yra išjungta, todėl autorizacija neveikia, visus puslapius galima pasiekti tiesiogiai įvedus į URL vieną iš norimų vartotojų tipų: pvz.: \nhttps://turiba-university-erasmus-project-remi-projects.vercel.app/guest, /student, /teacher, /management. \n\nP.S. tamsos rėžimas ir kalbų pasirinkimas veikia tik ant kai kurių puslapių.",
         "skills": "Figma,Tailwind CSS,Nuxt,Node.js,MongoDB"
@@ -81,8 +81,8 @@
         "company": "UAB Jung Vilnius",
         "link": "https://www.jung.de/lt/",
         "github": "https://github.com/H1X4Dev/KVK-Agile",
-        "image": "/app_1.webp",
-        "images": "/app_1.webp, /app_2.webp, /app_3.webp",
+        "image": "/app-1.webp",
+        "images": "/app-1.webp, /app-2.webp, /app-3.webp",
         "description": "Ši mobili programėlė buvo kuriama 5 studentų naudojant Agile metodologiją. Aš buvau atsakingas už Scrum vadovo pareigas bei dizainą ir mobilios aplikacijos klientinę pusę(front-end). ",
         "detailedDescription": "Šiai programėlei sukurti buvo naudojama Kotlin per Android Studio. Buvo laikomasi geriausių programavimo praktikų, kurių mokėmės studijų metu(SOLID principai).\nProgramėlės tikslas buvo padėti vartotojams išsirinkti išmaniųjų namų sistemą pagal užpildytą klausimyną ir nukreipti juos pas reikiamus tiekėjus, kurie galėtų įdiegti šias norimas paslaugas.",
         "skills": "Android Studio,Kotlin,Trello,Agile,Confluence"
@@ -92,8 +92,8 @@
         "company": "KVK kursinis darbas",
         "link": "",
         "github": "",
-        "image": "/assessment_system_3.webp",
-        "images": "/assessment_system_3.webp, /assessment_system_1.webp, /assessment_system_2.webp",
+        "image": "/assessment-system-3.webp",
+        "images": "/assessment-system-3.webp, /assessment-system-1.webp, /assessment-system-2.webp",
         "description": "Šį kursinį darbą kūriau vienas, pirmą kartą išbandžiau Nuxt karkasą su Tailwind CSS, serverinei pusei(back-end) buvo naudota Node.js. Sukūriau pasiekimų vertinimo sistemos internetinę aplikaciją, kurioje galima prisijungti kaip dėstytotojui, prisijungus, atlikti CRUD sukurtiems testams, kuriuos galima atlikinėti prisijungus kaip vartotojas studentas.",
         "detailedDescription": "Šioje vertinimo sistemoje, yra atvaizduojami testai iš duomenų bazės, kuriuos gali kurti/keisti/trinti prisijungęs dėstytojas. Taip pat yra sukurtas filtravimo funkcionalumas, kuris leidžia atsirūšiuoti testus pagal grupes, klausimų kiekį, laiko limitą ir t.t.",
         "skills": "Nuxt,Tailwind CSS,Node.js,MongoDB"
@@ -103,8 +103,8 @@
         "company": "KVK projektinis darbas",
         "link": "",
         "github": "",
-        "image": "/job_portal_1.webp",
-        "images": "/job_portal_1.webp, /job_portal_2.webp, /job_portal_3.webp",
+        "image": "/job-portal-1.webp",
+        "images": "/job-portal-1.webp, /job-portal-2.webp, /job-portal-3.webp",
         "description": "Šį projektinį darbą kūriau su 2 bendrakursiais, pirmą kartą naudojome MERN architektūrą. Šio projekto mokslinis straipsnis buvo pristatytas KVK technologijų konferencijoje, kuris yra patalptinas žemiau esančioje nuorodoje.",
         "detailedDescription": "",
         "skills": "React,Tailwind CSS,Node.js,MongoDB"
@@ -114,8 +114,8 @@
         "company": "AutoKorega",
         "link": "https://autokorega.lt/",
         "github": "",
-        "image": "/autokorega_1.webp",
-        "images": "/autokorega_1.webp, /autokorega_2.webp, /autokorega_3.webp",
+        "image": "/autokorega-1.webp",
+        "images": "/autokorega-1.webp, /autokorega-2.webp, /autokorega-3.webp",
         "description": "Šis projektas buvo sukurtas 3 pirmakursių studentų užsakovui iš Klaipėdos. Nuo idėjos sukūrėmę dizainą figmoje, atlikome norimus kliento pakeitimus ir pagal šį dizainą sukūrėme internetinę svetainę naudojant WordPress SeedProd builder įskiepį. Šioje svetainėje galima rasti informaciją apie autoserviso teikiamas paslaugas bei jų kontaktus.",
         "detailedDescription": "Šis projektas buvo sukurtas 3 pirmakursių studentų užsakovui iš Klaipėdos. Nuo idėjos sukūrėmę dizainą figmoje, atlikome norimus kliento pakeitimus ir pagal šį dizainą sukūrėme internetinę svetainę naudojant WordPress SeedProd builder įskiepį.\n\nDėl šio įskiepio nemokamos versijos funkcionalumo limitų, teko sugalvoti kaip ne standartiniais būdais implementuoti kliento norimą funkcionalumą naudojantis HTML, CSS ir JavaScript, be jokių papildomų bibliotekų ar karkasų. \n\nŠioje svetainėje galima rasti informaciją apie autoserviso teikiamas paslaugas bei jų kontaktus.\n\nBuvau atsakingas už komandos vadovo pareigas, užtikrinant, kad visa komanda atliktų savo užduotis kokybiškai.",
         "skills": "WordPress, SeedProd builder, HTML, CSS, JavaScript, Figma"
@@ -160,8 +160,8 @@
     }
   },
   "meta": {
-    "title": "Remigijus Prialgauskis - Tinklalapių Kūrėjas",
-    "description": "Profesionalus Remigijaus Prialgauskio portfolio, kuriame pristatomi tinklalapių kūrimo projektai ir įgūdžiai Nuxt, Figma, MongoDB ir daugelyje kitų."
+    "title": "Remigijus Prialgauskis | Tinklalapių Kūrėjas",
+    "description": "Profesionalus Remigijaus Prialgauskio portfolio, kuriame pristatomi jo sukurti projektai bei įgūdžiai Nuxt, Tailwind CSS, MongoDB, Figma, ir t.t."
   },
   "pages": {
     "home": "Pagrindinis",

@@ -70,8 +70,8 @@
         "company": "3ヶ月インターンシップ - トゥリバ大学",
         "link": "https://scrolle.me",
         "github": "https://github.com/RemiPR/Turiba-University-Erasmus-Project",
-        "image": "/student_bg.webp",
-        "images": "/student_bg.webp, /management_bg.webp, /guest_bg.webp, /guest_admission.webp, /teacher_groups.webp",
+        "image": "/student-bg.webp",
+        "images": "/student-bg.webp, /management-bg.webp, /guest-bg.webp, /guest-admission.webp, /teacher-groups.webp",
         "description": "KVKから3人の学生がこのインターンシップを完了しました。複数のタイプのユーザーが安全にログインできるLMS（学習管理システム）を作成する任務を与えられました。私はチームリーダーシップ、デザイン、フロントエンド開発を担当しました。デザインは自分たちで作成し、フロントエンドの大部分を私が個人的に開発しました。",
         "detailedDescription": "この意欲的なプロジェクトは3人の学生と1人のインターンシップ監督者によって開発されました。目標は、安全で使いやすく、Moodleと同様の主要機能を持つ学習管理システム（LMS）を作成することでした。このプロジェクトは、Moodleのような他の学習管理システムの現代的な問題、つまり過度に複雑で、不必要な機能が多すぎ、視覚的に魅力的でないという問題に対処することを目指しました。プロジェクトの範囲と時間的制約により、最小限のプロトタイプを作成しましたが、利用可能な時間は効果的に使用され、この期間中に多くの新しいことを学びました。現在、バックエンドは無効になっているため、認証は機能しません。すべてのページは、URLに希望するユーザータイプを直接入力することでアクセスできます：例えば、https://scrolle.me/guest, /student, /teacher, /management。注意：ダークモードと言語選択は一部のページでのみ機能します。",
         "skills": "Figma,Tailwind CSS,Nuxt,Node.js,MongoDB"
@@ -81,8 +81,8 @@
         "company": "UAB Jung Vilnius",
         "link": "https://www.jung.de/lt/",
         "github": "https://github.com/H1X4Dev/KVK-Agile",
-        "image": "/app_1.webp",
-        "images": "/app_1.webp, /app_2.webp, /app_3.webp",
+        "image": "/app-1.webp",
+        "images": "/app-1.webp, /app-2.webp, /app-3.webp",
         "description": "このモバイルアプリは、アジャイル方法論を使用して5人の学生によって開発されました。私はスクラムマスターの職務と、モバイルアプリケーションのデザインとフロントエンドを担当しました。",
         "detailedDescription": "このアプリを作成するために、Android Studioを通じてKotlinを使用しました。学業中に学んだベストプログラミング慣行（SOLIDの原則）を遵守しました。アプリの目的は、完成したアンケートに基づいてユーザーがスマートホームシステムを選択し、これらの希望するサービスを導入できる関連サプライヤーに案内することでした。",
         "skills": "Android Studio,Kotlin,Trello,Agile,Confluence"
@@ -92,8 +92,8 @@
         "company": "KVK課題作品",
         "link": "",
         "github": "",
-        "image": "/assessment_system_3.webp",
-        "images": "/assessment_system_3.webp, /assessment_system_1.webp, /assessment_system_2.webp",
+        "image": "/assessment-system-3.webp",
+        "images": "/assessment-system-3.webp, /assessment-system-1.webp, /assessment-system-2.webp",
         "description": "この課題作品は独立して開発し、初めてNuxtフレームワークとTailwind CSSを試し、バックエンドにNode.jsを使用しました。教師としてログインしてテストのCRUD操作を行い、学生としてログインしたユーザーがそれらのテストを受けられる成績評価システムのウェブアプリケーションを作成しました。",
         "detailedDescription": "この評価システムでは、データベースからテストが表示され、ログインした教師がそれらを作成/変更/削除できます。また、グループ、質問数、時間制限などでテストを並べ替えることができるフィルタリング機能もあります。",
         "skills": "Nuxt,Tailwind CSS,Node.js,MongoDB"
@@ -103,8 +103,8 @@
         "company": "KVKプロジェクト作品",
         "link": "",
         "github": "",
-        "image": "/job_portal_1.webp",
-        "images": "/job_portal_1.webp, /job_portal_2.webp, /job_portal_3.webp",
+        "image": "/job-portal-1.webp",
+        "images": "/job-portal-1.webp, /job-portal-2.webp, /job-portal-3.webp",
         "description": "このプロジェクトは2人の同僚と開発し、初めてMERNアーキテクチャを使用しました。このプロジェクトに関する科学論文がKVK技術会議で発表されました。このプロジェクトカードをクリックすると表示されるリンクをクリックすると、その論文を見つけることができます。",
         "detailedDescription": "",
         "skills": "React,Tailwind CSS,Node.js,MongoDB"
@@ -114,8 +114,8 @@
         "company": "AutoKorega",
         "link": "https://autokorega.lt/",
         "github": "",
-        "image": "/autokorega_1.webp",
-        "images": "/autokorega_1.webp, /autokorega_2.webp, /autokorega_3.webp",
+        "image": "/autokorega-1.webp",
+        "images": "/autokorega-1.webp, /autokorega-2.webp, /autokorega-3.webp",
         "description": "このプロジェクトは、クライペダのクライアントのために3人の1年生の学生によって作成されました。私たちはFigmaでアイデアをデザインし、クライアントの要望に応じた変更を行い、このデザインに基づいてWordPress SeedProdビルダープラグインを使用してウェブサイトを開発しました。このウェブサイトでは、自動車サービスが提供するサービスと連絡先情報を確認できます。",
         "detailedDescription": "このプロジェクトは、クライペダのクライアントのために3人の1年生の学生によって作成されました。私たちはFigmaでアイデアをデザインし、クライアントの要望に応じた変更を行い、このデザインに基づいてWordPress SeedProdビルダープラグインを使用してウェブサイトを開発しました。\n\nこのウェブサイトでは、自動車サービスが提供するサービスと連絡先情報を確認できます。\n\n私はチームリーダーの役割を担当し、チーム全体が質の高い仕事を遂行できるようにしました。",
         "skills": "WordPress, SeedProdビルダー, HTML, CSS, JavaScript, Figma"
@@ -160,7 +160,7 @@
     }
   },
   "meta": {
-    "title": "レミギユス・プリアルガウスキス - ウェブ開発者",
+    "title": "レミギユス・プリアルガウスキス | ウェブ開発者",
     "description": "レミギユス・プリアルガウスキスのプロフェッショナルポートフォリオ。Nuxt、Figma、MongoDB、その他多くの技術を用いたウェブ開発プロジェクトとスキルを紹介しています。"
   },
   "pages": {

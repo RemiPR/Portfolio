@@ -20,14 +20,49 @@ import { useI18n } from "vue-i18n";
 
 const { t } = useI18n();
 
+useHead({
+  titleTemplate: "%s",
+  meta: [
+    { charset: "utf-8" },
+    { name: "viewport", content: "width=device-width, initial-scale=1" },
+    { name: "format-detection", content: "telephone=no" },
+  ],
+  link: [
+    { rel: "preconnect", href: "https://rsms.me/" },
+    { rel: "stylesheet", href: "https://rsms.me/inter/inter.css" },
+    { rel: "icon", type: "image/x-icon", href: "/favicon.ico" },
+    {
+      rel: "apple-touch-icon",
+      sizes: "180x180",
+      href: "/apple-touch-icon.png",
+    },
+    {
+      rel: "icon",
+      type: "image/png",
+      sizes: "32x32",
+      href: "/favicon-32x32.png",
+    },
+    {
+      rel: "icon",
+      type: "image/png",
+      sizes: "16x16",
+      href: "/favicon-16x16.png",
+    },
+    { rel: "manifest", href: "/site.webmanifest" },
+  ],
+});
+
 useSeoMeta({
   title: t("meta.title"),
-  meta: [
-    {
-      name: "description",
-      content: t("meta.description"),
-    },
-  ],
+  description: t("meta.description"),
+  ogTitle: t("meta.title"),
+  ogDescription: t("meta.description"),
+  ogImage: {
+    url: "/og-image.png",
+    width: 1200,
+    height: 630,
+    alt: "Open Graph Image",
+  },
 });
 
 const isLoading = ref(true);
