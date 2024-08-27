@@ -195,9 +195,6 @@
                   >
                   {{ $t("typeface") }}
                 </p>
-                <p class="mt-2">
-                  {{ $t("portfolioCredit") }}
-                </p>
               </section>
             </main>
           </div>

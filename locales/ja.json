@@ -24,7 +24,6 @@
   "builtWith": "NuxtとTailwind CSSを使用して構築し、Vercelでホスティングしています。すべてのテキストは",
   "inter": "Inter",
   "typeface": "書体で設定されています。",
-  "portfolioCredit": "",
   "experience": {
     "title": "経験",
     "downloadResume": "履歴書をダウンロード",
