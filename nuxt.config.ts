@@ -28,7 +28,7 @@ export default defineNuxtConfig({
       emailjsPublicKey: process.env.EMAILJS_PUBLIC_KEY,
       scripts: {
         googleAnalytics: {
-          id: process.env.GOOGLE_ANALYTICS_ID,
+          id: process.env.NUXT_PUBLIC_SCRIPTS_GOOGLE_ANALYTICS_ID,
         },
       },
     },
