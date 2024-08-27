@@ -9,6 +9,7 @@ export default defineNuxtConfig({
     "nuxt-swiper",
     "@nuxt/image",
     "nuxt-lodash",
+    "@nuxt/scripts",
   ],
   css: ["@/assets/css/inter.css"],
   googleFonts: {
@@ -25,6 +26,16 @@ export default defineNuxtConfig({
       emailjsServiceId: process.env.EMAILJS_SERVICE_ID,
       emailjsTemplateId: process.env.EMAILJS_TEMPLATE_ID,
       emailjsPublicKey: process.env.EMAILJS_PUBLIC_KEY,
+      scripts: {
+        googleAnalytics: {
+          id: process.env.GOOGLE_ANALYTICS_ID,
+        },
+      },
+    },
+  },
+  scripts: {
+    registry: {
+      googleAnalytics: true,
     },
   },
   i18n: {
