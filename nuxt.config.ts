@@ -26,16 +26,13 @@ export default defineNuxtConfig({
       emailjsServiceId: process.env.EMAILJS_SERVICE_ID,
       emailjsTemplateId: process.env.EMAILJS_TEMPLATE_ID,
       emailjsPublicKey: process.env.EMAILJS_PUBLIC_KEY,
-      scripts: {
-        googleAnalytics: {
-          id: process.env.NUXT_PUBLIC_SCRIPTS_GOOGLE_ANALYTICS_ID,
-        },
-      },
     },
   },
   scripts: {
     registry: {
-      googleAnalytics: true,
+      googleAnalytics: {
+        id: "G-0CVHJ4J2DY",
+      },
     },
   },
   i18n: {
