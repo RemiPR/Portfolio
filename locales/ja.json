@@ -21,9 +21,7 @@
       "5": "プログラミングをしていない時は、主にコンピューターで様々なIT動画を見て過ごしています。アニメを見たり、少しずつ日本語を学んだり、友達とコンピューターゲームをしたりするのも楽しんでいます。"
     }
   },
-  "builtWith": "NuxtとTailwind CSSを使用して構築し、Vercelでホスティングしています。すべてのテキストは",
-  "inter": "Inter",
-  "typeface": "書体で設定されています。",
+  "builtWith": "NuxtとTailwind CSSを使用して構築し、Vercelでホスティングしています。",
   "experience": {
     "title": "経験",
     "downloadResume": "履歴書をダウンロード",

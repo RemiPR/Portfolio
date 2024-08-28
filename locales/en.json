@@ -21,9 +21,7 @@
       "5": "When I'm not programming, I spend most of my free time at the computer watching various IT videos. I also enjoy watching anime, learning Japanese bit by bit, and playing computer games with friends."
     }
   },
-  "builtWith": "Built using Nuxt and Tailwind CSS, hosted on Vercel. All text is set in the",
-  "inter": "Inter",
-  "typeface": "typeface.",
+  "builtWith": "Built using Nuxt and Tailwind CSS, hosted on Vercel.",
   "experience": {
     "title": "Experience",
     "downloadResume": "Download CV",

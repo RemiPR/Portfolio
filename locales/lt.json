@@ -21,9 +21,7 @@
       "5": "Kai neprogramuoju, didžiąją dalį laisvo laiko praleidžiu prie kompiuterio žiūrėdamas visokius IT video, taip pat žiūriu anime, po truputį mokinuosi japonų kalbos ir žaidžiu kompiuterinius žaidimus su draugais."
     }
   },
-  "builtWith": "Sukurta naudojant Nuxt ir Tailwind CSS, patalpinta su Vercel. Visi tekstai uždėti",
-  "inter": "Inter",
-  "typeface": "šriftu.",
+  "builtWith": "Sukurta naudojant Nuxt ir Tailwind CSS, patalpinta su Vercel.",
   "experience": {
     "title": "Patirtis",
     "downloadResume": "Atsisiųsti CV",

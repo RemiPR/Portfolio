@@ -188,12 +188,6 @@
               <section class="mt-24 text-sm text-slate-500">
                 <p>
                   {{ $t("builtWith") }}
-                  <a
-                    href="https://rsms.me/inter/"
-                    class="text-slate-200 hover:text-teal-300"
-                    >{{ $t("inter") }}</a
-                  >
-                  {{ $t("typeface") }}
                 </p>
               </section>
             </main>

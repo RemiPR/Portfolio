@@ -1,5 +1,6 @@
 export default defineNuxtConfig({
   devtools: { enabled: false },
+
   modules: [
     "@nuxtjs/tailwindcss",
     "@nuxtjs/google-fonts",
@@ -11,16 +12,20 @@ export default defineNuxtConfig({
     "nuxt-lodash",
     "@nuxt/scripts",
   ],
+
   css: ["@/assets/css/inter.css"],
+
   googleFonts: {
     families: {
       Inter: true,
     },
     display: "swap",
-    prefetch: true,
-    preconnect: true,
     preload: true,
+    prefetch: true,
+    download: true,
+    inject: true,
   },
+
   runtimeConfig: {
     public: {
       emailjsServiceId: process.env.EMAILJS_SERVICE_ID,
@@ -28,6 +33,7 @@ export default defineNuxtConfig({
       emailjsPublicKey: process.env.EMAILJS_PUBLIC_KEY,
     },
   },
+
   scripts: {
     registry: {
       googleAnalytics: {
@@ -35,6 +41,7 @@ export default defineNuxtConfig({
       },
     },
   },
+
   i18n: {
     // debug: true,
     lazy: true,
@@ -69,4 +76,6 @@ export default defineNuxtConfig({
       fallbackLocale: "en",
     },
   },
+
+  compatibilityDate: "2024-08-28",
 });
