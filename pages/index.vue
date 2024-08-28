@@ -85,12 +85,10 @@
                 >
                   <button
                     @click="toggleContent"
-                    class="flex items-center justify-between w-full text-left lg:cursor-default"
+                    class="flex items-center justify-between w-full text-left lg:cursor-default lg:hidden"
                     :aria-expanded="isContentVisible"
                   >
-                    <h2
-                      class="text-2xl font-bold lg:mb-4 text-slate-200 lg:hidden"
-                    >
+                    <h2 class="text-2xl font-bold lg:mb-4 text-slate-200">
                       {{ $t("about.title") }}
                     </h2>
                     <svg
