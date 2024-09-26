@@ -1,6 +1,7 @@
 <!-- app.vue-->
 <template>
   <div>
+    <SpeedInsights />
     <Transition name="fade">
       <LoadingSpinner v-if="isLoading" />
     </Transition>
