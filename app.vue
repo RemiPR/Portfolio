@@ -17,6 +17,7 @@
 
 <script setup>
 import { useI18n } from "vue-i18n";
+import { SpeedInsights } from "@vercel/speed-insights/nuxt"
 
 const { t, locale } = useI18n();
 
