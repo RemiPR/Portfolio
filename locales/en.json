@@ -41,7 +41,7 @@
         "period": "MAY — JUL 2024",
         "title": "3-month internship in Latvia",
         "company": "Turiba University",
-        "link": "https://scrolle.me",
+        "link": "https://turiba-university-erasmus-project-remi-projects.vercel.app",
         "description": "Three students from KVK completed this internship. We were tasked with creating a prototype of an LMS - Learning Management System, which would allow secure login for 5 different types of users. I was responsible for team leadership, project planning, design, and front-end development. We created the design ourselves, and I personally developed most of the front-end.",
         "detailedDescription": "Due to the project's scope, requirements, and time constraints, we created a minimal prototype, so a large part of the functionality wasn't completed. However, the available time was used effectively, and we learned many new things during this period.\n\nMore details are provided in the projects section below.",
         "skills": "Figma,Tailwind CSS,Nuxt,Node.js,MongoDB",
@@ -65,7 +65,7 @@
       "0": {
         "title": "LMS - Learning Management System",
         "company": "3-month internship - Turiba University ",
-        "link": "https://scrolle.me",
+        "link": "https://turiba-university-erasmus-project-remi-projects.vercel.app",
         "github": "https://github.com/RemiPR/Turiba-University-Erasmus-Project",
         "image": "/student-bg.webp",
         "images": "/student-bg.webp, /management-bg.webp, /guest-bg.webp, /guest-admission.webp, /teacher-groups.webp",

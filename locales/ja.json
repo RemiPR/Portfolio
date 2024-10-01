@@ -41,7 +41,7 @@
         "period": "2024年5月 — 7月",
         "title": "ラトビアでの3ヶ月インターンシップ",
         "company": "トゥリバ大学",
-        "link": "https://scrolle.me",
+        "link": "https://turiba-university-erasmus-project-remi-projects.vercel.app",
         "description": "KVKから3人の学生がこのインターンシップを完了しました。5種類の異なるユーザーが安全にログインできるLMS（学習管理システム）のプロトタイプを作成する任務を与えられました。私はチームリーダーシップ、プロジェクト計画、デザイン、フロントエンド開発を担当しました。デザインは自分たちで作成し、フロントエンドの大部分を私が個人的に開発しました。",
         "detailedDescription": "プロジェクトの範囲、要件、時間的制約により、最小限のプロトタイプを作成したため、機能の大部分は完成しませんでした。しかし、利用可能な時間は効果的に使用され、この期間中に多くの新しいことを学びました。詳細は以下のプロジェクトセクションに記載されています。",
         "skills": "Figma,Tailwind CSS,Nuxt,Node.js,MongoDB",
@@ -65,7 +65,7 @@
       "0": {
         "title": "LMS - 学習管理システム",
         "company": "3ヶ月インターンシップ - トゥリバ大学",
-        "link": "https://scrolle.me",
+        "link": "https://turiba-university-erasmus-project-remi-projects.vercel.app",
         "github": "https://github.com/RemiPR/Turiba-University-Erasmus-Project",
         "image": "/student-bg.webp",
         "images": "/student-bg.webp, /management-bg.webp, /guest-bg.webp, /guest-admission.webp, /teacher-groups.webp",
